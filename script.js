@@ -91,3 +91,9 @@ furNames.forEach((element,index)=>{
         furItems[index].classList.add('furniture-active')
     })
 })
+const hotel = document.querySelector('#hotels')
+const hotelBlock =document.querySelector('.hotel__hover')
+// hotel.addEventListener('click',function(){
+
+//     hotelBlock.classList.toggle('displayBlock')
+// })
