@@ -55,9 +55,11 @@
         position: relative;
 
     }
-    .menu__el__mobile{
+
+    .menu__el__mobile {
         display: none;
     }
+
     .header__input input {
         width: 924px;
         padding: 16px 0;
@@ -159,9 +161,11 @@
         align-items: center;
         text-transform: uppercase;
     }
-    .paymentMethod__mobile{
+
+    .paymentMethod__mobile {
         display: none;
     }
+
     .mainslider__slide {
         width: 100%;
         height: 700px !important;
@@ -1213,6 +1217,10 @@
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), #8CAFC5;
     }
 
+    .catalog__780 {
+        display: none;
+    }
+
     .hotel__hover,
     .badroom__hover,
     .lobby__hover,
@@ -1390,7 +1398,8 @@
         font-family: "Poppins", sans-serif;
         font-weight: 500;
     }
-    .burgerMenu1{
+
+    .burgerMenu1 {
         position: absolute;
         top: 0;
         display: none;
@@ -1398,17 +1407,21 @@
         padding: 10px 18px 18px;
         background: white;
     }
-    .burgerMenu1 a{
+
+    .burgerMenu1 a {
         padding-top: 8px;
         color: #575757;
     }
+
     .takeBackCall__wrapper label {
         display: block;
         padding-bottom: 12px;
     }
-    .takeBackCall__wrapper{
+
+    .takeBackCall__wrapper {
         position: relative;
     }
+
     .inputs::placeholder {
         font-size: 28px;
         color: #1E1E1E;
@@ -1815,9 +1828,17 @@
 
     }
 
+    .modernCollection__swiper1 a {
+        display: none;
+    }
+
     @media screen and (max-width:1100px) {
         .container {
             width: 719px;
+        }
+
+        .catalog__open_back_hotel {
+            cursor: pointer;
         }
 
         .header__block1_mobile {
@@ -2172,35 +2193,126 @@
             font-weight: 300;
             margin-bottom: 35px;
         }
-        #takeBackCall{
+
+        #takeBackCall {
             padding: 24px 24px 28px;
             width: 360px;
         }
-        .takeBackCall__wrapper h2{
+
+        .takeBackCall__wrapper h2 {
             padding-bottom: 20px;
             padding-top: 30px;
             font-size: 20px;
         }
-        #takeBackCall__close{
+
+        #takeBackCall__close {
             position: absolute;
             right: -7px;
             top: -7px;
             width: 24px;
         }
-        .inputs::placeholder{
+
+        .inputs::placeholder {
             font-size: 16px;
         }
-        .inputs{
+
+        .inputs {
             width: 100%;
             padding-bottom: 7px;
             font-size: 16px;
         }
+
         .takeBackCall__wrapper label {
             padding-bottom: 0;
         }
-        #main p{
+
+        #main p {
             font-size: 12px;
             margin-left: 21px;
+        }
+
+        .slide__text h2 {
+            font-size: 64px !important;
+            font-weight: 600 !important;
+        }
+
+        .slide__call {
+            right: 11px;
+            bottom: 12px;
+            width: 28px;
+        }
+
+        .slide__call img {
+            width: 28px;
+        }
+
+        .catalog__780 {
+            display: block;
+            position: absolute;
+            background: white;
+            z-index: 10000000;
+            padding: 24px;
+            width: 360px;
+        }
+
+        .catalog__780__wrapper {
+            position: relative;
+        }
+
+        .close__catalog780 {
+            position: absolute;
+            right: 0;
+            z-index: 99999999999;
+            cursor: pointer;
+            top: 0;
+        }
+
+        .catalog__780 .hotel__names__main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-bottom: 44px;
+        }
+
+        .catalog__780 a {
+            font-weight: 300;
+            color: #575757 !important;
+        }
+
+        .catalog__780 a:hover {
+            text-decoration: none !important;
+            color: #1E1E1E !important;
+            transition: .3s all;
+            font-weight: 400;
+        }
+
+        .catalog__open__seeAll a {
+            font-weight: 400;
+            color: #1E1E1E !important;
+        }
+
+        .catalog__open_hotels {
+            position: absolute;
+            top: -24px;
+            ;
+            left: -24px;
+            padding: 24px;
+            background: white;
+            z-index: 10000;
+        }
+
+        .catalog__open_back_hotel {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .catalog__open__seeAll a {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 20px;
         }
     }
 
@@ -2208,7 +2320,7 @@
         .container {
             width: 329px;
         }
-        
+
         .header__logo img {
             width: 166px;
         }
@@ -2461,6 +2573,10 @@
             gap: 0;
         }
 
+        .modernCollection__swiper1 a {
+            display: flex;
+        }
+
         .individualFurniture__text p {
             font-size: 14px;
             line-height: 20px;
@@ -2575,57 +2691,77 @@
         .footer__info__watsapp {
             width: 172px;
         }
-        .footer__info__work{
+
+        .footer__info__work {
             width: 150px;
         }
-        .footer__info_mobile{
+
+        .footer__info_mobile {
             flex-direction: row;
             gap: 0;
             flex-wrap: wrap;
             justify-content: flex-start;
         }
-        .footer__info__work p{
+
+        .footer__info__work p {
             padding-top: 0;
         }
-        .footer__info__work span{
+
+        .footer__info__work span {
             font-size: 12px;
         }
-        .footer__info__icons{
+
+        .footer__info__icons {
             margin-top: 20px;
         }
-        .footer__info__icons svg{
+
+        .footer__info__icons svg {
             width: 24px;
         }
-        .paymentMethod{
+
+        .paymentMethod {
             display: none;
         }
-        .paymentMethod__mobile{
+
+        .paymentMethod__mobile {
             display: block;
         }
+
         .footer__menu {
             flex-direction: row;
-            flex-wrap: wrap ;
+            flex-wrap: wrap;
             gap: 0;
         }
-        .menu__el ul li a{
+
+        .menu__el ul li a {
             width: 152px;
             margin-bottom: 8px;
             font-size: 14px;
         }
-        .menu__el p{
+
+        .menu__el p {
             font-size: 16px;
         }
-        .footer__otherinfo__mobile img{
+
+        .footer__otherinfo__mobile img {
             display: none;
         }
-        .menu__el__mobile{
+
+        .menu__el__mobile {
             display: block;
             margin-top: auto;
             margin-right: auto;
             margin-left: 20px;
         }
-        .footer__otherinfo__mobile{
+
+        .footer__otherinfo__mobile {
             font-size: 14px;
         }
-      
+
+        .slide__text h4 {
+            transform: translate(0, 0);
+            position: absolute;
+            right: 20px;
+            bottom: -35px;
+        }
     }
