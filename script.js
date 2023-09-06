@@ -68,6 +68,11 @@ const swiper5 = new Swiper('.swiperFurniture',{
     spaceBetween:25,
     slidesPerView:1.3
 })
+const swiper8 = new Swiper('.furniture__namesSwiper',{
+    freeMode:true,
+    spaceBetween:20,
+    slidesPerView:2.5
+})
 const swiper6 = new Swiper('.swiperFurniture2',{
     freeMode:true,
     spaceBetween:25,
@@ -140,10 +145,20 @@ const swiper3 = new Swiper('.reviews__swiper', {
     },
   
 });
+let furNames1 = [...document.querySelectorAll('.furniture__namesSwiper li')]
 let furNames= [...document.querySelectorAll('.furniture__names ul li')]
-console.log(furNames);
 let furItems = [...document.querySelectorAll('.furnitures_wrapper > div')]
-console.log(furItems);
+
+furNames1.forEach((element,index)=>{
+    element.addEventListener('click',function(){
+        furNames1.forEach((el,i)=>{
+            el.classList.remove('fur-active')
+            furItems[i].classList.remove('furniture-active')
+        })
+        element.classList.add('fur-active')
+        furItems[index].classList.add('furniture-active')
+    })
+})
 
 furNames.forEach((element,index)=>{
     element.addEventListener('click',function(){

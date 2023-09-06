@@ -55,7 +55,9 @@
         position: relative;
 
     }
-
+    .menu__el__mobile{
+        display: none;
+    }
     .header__input input {
         width: 924px;
         padding: 16px 0;
@@ -157,7 +159,9 @@
         align-items: center;
         text-transform: uppercase;
     }
-
+    .paymentMethod__mobile{
+        display: none;
+    }
     .mainslider__slide {
         width: 100%;
         height: 700px !important;
@@ -622,6 +626,10 @@
         background: url(./photo/fur16.png);
     }
 
+    .footer__otherinfo__mobile {
+        display: none;
+    }
+
     .element17 {
         width: 724px;
         height: 416px;
@@ -1055,6 +1063,10 @@
         position: relative;
     }
 
+    .footer__info_mobile {
+        display: none;
+    }
+
     .showroom__logo {
         position: absolute;
         top: 50%;
@@ -1189,6 +1201,10 @@
         gap: 8px;
     }
 
+    .furniture__namesSwiper {
+        display: none !important;
+    }
+
     .underfooter {
         text-align: center;
         color: white;
@@ -1282,7 +1298,7 @@
     }
 
     .location__info>p {
-        font-style: 18px;
+        font-size: 18px;
         padding-bottom: 15px;
         line-height: 24px;
     }
@@ -1837,7 +1853,9 @@
         }
 
         .mainslider__slide {
+
             background: url(./photo/banner_mobile.png);
+            background-size: cover;
             height: 332px !important;
         }
 
@@ -2061,26 +2079,509 @@
         .swiperFurniture3 {
             display: block !important;
         }
-        #salesHit h2{
+
+        #salesHit h2 {
             padding-top: 0;
         }
-        #modernCollection h2{
+
+        #modernCollection h2 {
             padding: 16px 0 25px;
         }
-        .ourProduction__wrapper h2{
+
+        .ourProduction__wrapper h2 {
             padding-top: 0;
         }
-        #location{
+
+        #location {
             padding: 32px 0 52px;
         }
-        .footer__lines{
-            margin-top: 0;
+
+        .footer__lines {
+            margin-bottom: 32px;
         }
-        .location__info{
+
+        .location__info {
             width: 348px;
             height: 317px;
             padding: 17px;
             right: 24px;
             bottom: 76px;
+        }
+
+        .underfooter {
+            font-size: 14px;
+        }
+
+        .footer__menu__wrapper {
+            align-items: center;
+        }
+
+        .footer__menu {
+            gap: 24px;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .footer__otherinfo {
+            display: none;
+        }
+
+        .footer__info {
+            display: none;
+        }
+
+        .footer__info_mobile {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            width: 100%;
+        }
+
+        .footer__info__icons {
+            margin-top: 32px;
+        }
+
+        .footer__info__work {
+            margin-top: 0;
+        }
+
+        .paymentMethod {
+            margin-top: 32px;
+        }
+
+        .footer__otherinfo__mobile {
+            display: flex;
+            justify-content: space-between;
+            color: #575757;
+            font-size: 18px;
+            width: 100%;
+            align-items: center;
+            font-weight: 300;
+            margin-bottom: 35px;
+        }
+    }
+
+    @media screen and (max-width:725px) {
+        .container {
+            width: 329px;
+        }
+
+        .header__logo img {
+            width: 166px;
+        }
+
+        .mobile__phones {
+            align-items: center;
+        }
+
+        .header__block1_mobile .container {
+            align-items: center;
+        }
+
+        .mobile__phones p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .backcall__mobile {
+            height: 34px;
+        }
+
+        .header__input input {
+            display: none;
+            border: none;
+        }
+
+        .input__svg {
+            position: absolute;
+            right: -19px;
+            bottom: -22px;
+        }
+
+        .header__block3 {
+            display: none;
+        }
+
+        .slide__text h4 {
+            transform: translate(121px, 172px);
+        }
+
+        h2 {
+            font-size: 20px !important;
+            font-weight: 500 !important;
+        }
+
+        #modernCollection .container {
+            width: 100%;
+        }
+
+        .modernCollection__info {
+            width: 328px;
+            gap: 8px;
+            padding: 10px 0;
+            margin: auto;
+            transform: translate(0, -5px);
+        }
+
+        .modernCollection__info-text h3 {
+            font-size: 20px;
+        }
+
+        .modernCollection__info-text h4 {
+            font-size: 16px;
+        }
+
+        .modernCollection__info-text p {
+            width: auto;
+        }
+
+        .furniture__names ul {
+            width: auto;
+        }
+
+        .modernCollection__backBlock {
+            display: none;
+        }
+
+        .modernCollection__swiper3 a {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 10px;
+            padding-top: 25px;
+        }
+
+        .showroom__block2 img {
+            width: 100%;
+        }
+
+        .footer__info_mobile {
+            flex-direction: column;
+        }
+
+        .footer__menu {
+            flex-direction: column;
+        }
+
+        .email__host__images img {
+            display: none;
+        }
+
+        .email__host-wrapper {
+            border: none;
+            padding: 0;
+            align-items: center;
+            padding-top: 120px;
+            gap: 12px;
+        }
+
+        .email__host-wrapper h3 {
+            font-size: 16px;
+        }
+
+        .email {
+            text-align: center;
+            margin: auto;
+            font-weight: 600;
+        }
+
+        .email input {
+            width: 195px;
+        }
+
+        .email button {
+            width: 132px;
+            font-size: 16px;
+        }
+
+        .email__host__img2 {
+            display: block !important;
+        }
+
+        .email__host__images {
+            position: absolute;
+            left: 67%;
+            bottom: 89px;
+        }
+
+        .slide__text h4 {
+            transform: translate(60px, 255px);
+        }
+
+        .furniture__element {
+            background-size: 100% 100%;
+            width: 242px !important;
+            height: 206px;
+
+        }
+
+        .furniture__element__text {
+            width: 212px;
+            padding: 10px 15px;
+        }
+
+        .furniture__names__ul {
+            display: none !important;
+        }
+
+        .furniture__namesSwiper {
+            padding-bottom: 20px !important;
+            border-bottom: 1px solid #1E1E1E;
+        }
+
+        .fur-active div {
+            bottom: -21px;
+            width: 90%;
+        }
+
+        .furniture__namesSwiper {
+            display: block !important;
+        }
+
+        .salesHit__swiper .product__photo {
+            background: url(./photo/product1_mobile.png);
+            background-size: cover;
+            height: 168px;
+        }
+
+        .product__photo .new,
+        .product__photo .sale {
+            font-size: 12px;
+        }
+
+        .product__photo img {
+            width: 24px;
+        }
+
+        .product__name {
+            font-size: 14px;
+        }
+
+        .product__price {
+            font-size: 18px;
+        }
+
+        .product__price del {
+            font-size: 16px;
+        }
+
+        .salesHit__swiper .swiper-slide {
+            padding-right: 0;
+        }
+
+        .product__addToCart span {
+            display: none;
+        }
+
+        .product__addToCart {
+            margin-top: 20px;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+
+        .freeDelivery__text {
+            margin-right: 0;
+        }
+
+        .freeDelivery__wrapper {
+            padding-top: 21px;
+        }
+
+        #freeDelivery {
+            margin: 36px 0;
+        }
+
+        .ideaForHome__element {
+            height: 300px;
+            background-size: cover;
+        }
+
+        .ideaElement4 {
+            height: 174px;
+        }
+
+        .ideaForHome__photos {
+            gap: 12px;
+        }
+
+        .ourProduction__img {
+            gap: 12px;
+        }
+
+        .ourProduction__img div p {
+            font-size: 14px;
+            line-height: 170%;
+        }
+
+        .ourProduction__goals {
+            padding: 16px 0;
+            gap: 0;
+        }
+
+        .individualFurniture__text p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .individualFurniture__wrapper>div>svg {
+            width: 113px;
+        }
+
+        #individualFurniture {
+            padding: 20px 0 0;
+        }
+
+        .reviews__slide2,
+        .reviews__slide1 {
+            height: 200px !important;
+            background-size: 100% 100% !important;
+        }
+
+        .reviews__main {
+            padding: 14px 14px 11px;
+        }
+
+        .modernCollection__pagination .swiper-pag {
+            left: -42px;
+        }
+
+        .reviews__wrapper>p {
+            font-size: 14px;
+        }
+
+        .reviews__wrapper {
+            padding: 36px 0;
+        }
+
+        .showroom__wrapper {
+            gap: 16px;
+            padding: 0;
+        }
+
+        .showroom__block1 {
+            gap: 16px;
+        }
+
+        .showroom__logo {
+            font-size: 20px;
+        }
+
+        .showroom__block1 img {
+            width: 156px;
+        }
+
+        .showroom__logo img {
+            width: 110px;
+        }
+
+        .showroom__block2 img {
+            display: none;
+        }
+
+        .location__info {
+            position: static;
+            width: 100%;
+        }
+
+        .location__map {
+            height: 200px;
+            background: url(./photo/map__mobile2.png);
+            background-size: cover;
+        }
+
+        .location__map img {
+            width: 24px;
+            top: 155px;
+            left: 174px;
+            display: none;
+        }
+
+        .location__info h3 {
+            font-size: 20px;
+            width: 195px;
+        }
+
+        .location__info>p {
+            font-size: 16px;
+        }
+
+        .footer__lines img {
+            width: 107px;
+        }
+
+        .footer__info__watsapp div {
+            font-size: 16px;
+            gap: 0;
+            padding-bottom: 18px;
+        }
+
+        .footer__info__watsapp img {
+            width: 24px;
+        }
+
+        .footer__info__watsapp p {
+            font-size: 14px;
+            padding-bottom: 6px;
+        }
+
+        .footer__info__work p {
+            font-size: 16px;
+            padding-top: 12px;
+        }
+
+        .footer__info__watsapp {
+            width: 172px;
+        }
+        .footer__info__work{
+            width: 150px;
+        }
+        .footer__info_mobile{
+            flex-direction: row;
+            gap: 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .footer__info__work p{
+            padding-top: 0;
+        }
+        .footer__info__work span{
+            font-size: 12px;
+        }
+        .footer__info__icons{
+            margin-top: 20px;
+        }
+        .footer__info__icons svg{
+            width: 24px;
+        }
+        .paymentMethod{
+            display: none;
+        }
+        .paymentMethod__mobile{
+            display: block;
+        }
+        .footer__menu {
+            flex-direction: row;
+            flex-wrap: wrap ;
+            gap: 0;
+        }
+        .menu__el ul li a{
+            width: 152px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .menu__el p{
+            font-size: 16px;
+        }
+        .footer__otherinfo__mobile img{
+            display: none;
+        }
+        .menu__el__mobile{
+            display: block;
+            margin-top: auto;
+            margin-right: auto;
+            margin-left: 20px;
+        }
+        .footer__otherinfo__mobile{
+            font-size: 14px;
         }
     }
