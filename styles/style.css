@@ -1530,7 +1530,16 @@
     .overflow__hiden {
         overflow: hidden;
     }
-
+#furniture {
+    padding-bottom: 30px;
+}
+#salesHit h2{
+    padding-top: 20px;
+}
+.footer__lines {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
     @media screen and (max-width:1730px) {
         .container {
             width: 1402px;
@@ -2294,7 +2303,7 @@
         .catalog__open_hotels {
             position: absolute;
             top: -24px;
-            ;
+            display: none;
             left: -24px;
             padding: 24px;
             background: white;
@@ -2306,6 +2315,10 @@
             align-items: center;
             gap: 12px;
             margin-bottom: 20px;
+        }
+
+        .hotel__names__main li {
+            cursor: pointer;
         }
 
         .catalog__open__seeAll a {
@@ -2643,7 +2656,9 @@
         }
 
         .location__map {
-            height: 200px;
+            height: auto;
+            min-height: 374px;
+            
             background: url(./photo/map__mobile2.png);
             background-size: cover;
         }

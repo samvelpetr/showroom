@@ -203,3 +203,17 @@ popUp1Close.addEventListener('click', function () {
     popUp1.classList.remove('displayFlex')
     document.body.classList.remove('overflow__hiden')
 })
+
+const hotelNamesCat = [...document.querySelectorAll('.catalog__780 .hotel__names__main li')]
+const hotelBacks = [...document.querySelectorAll('.catalog__open_back_hotel')]
+
+const hotelBlocks = [...document.querySelectorAll('.catalog__open_hotels')]
+hotelNamesCat.forEach((e, i) => {
+    hotelBacks[i].addEventListener('click', function () {
+        hotelBlocks[i].classList.remove('displayBlock')
+
+    })
+    e.addEventListener('click', function () {
+        hotelBlocks[i].classList.add('displayBlock')
+    })
+})
