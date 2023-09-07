@@ -30,9 +30,9 @@ const swiper1 = new Swiper('.modernCollection__swiper1', {
         }
     },
 
-    autoplay: {
-        delay: 2000,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    // },
 
 
 });
@@ -58,9 +58,9 @@ const swiper4 = new Swiper('.modernCollection__swiper3', {
         }
     },
 
-    autoplay: {
-        delay: 2000,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    // },
 
 });
 const swiper5 = new Swiper('.swiperFurniture', {
@@ -181,14 +181,47 @@ const burger__menuIcon = document.querySelector('.burger__menuIcon')
 burger__menuIcon.addEventListener('click', function () {
     burgerMenu1.classList.add('displayBlock')
 })
+const hoverIcon = [...document.querySelectorAll('.hoverIcon')].splice(0,3)
+const hoverIcon1 = [...document.querySelectorAll('.hoverIcon')].splice(3)
+const modern__hoverItems = [...document.querySelectorAll('.modern__hoverItems')].splice(0,3)
+const modern__hoverItems1 = [...document.querySelectorAll('.modern__hoverItems')].splice(3)
+
+// hoverIcon.forEach((e,i)=>{
+//     try {
+        
+    
+//     e.addEventListener('mouseover',function(){
+//         console.log(true);
+//         modern__hoverItems[i].classList.add('displayBlock')
+//     })
+//     e.addEventListener('mouseout',function(){
+//         modern__hoverItems[i].classList.remove('displayBlock')
+//     })}catch (error) {
+        
+//     }
+// })
+hoverIcon1.forEach((e,i)=>{
+    e.addEventListener('click',function(){
+        modern__hoverItems1[i].classList.add('displayBlock')
+
+    })
+})
 document.body.onclick = function (e) {
     if (e.target.localName == 'svg' || e.target.className == 'burger__menuIcon') {
         return 0
 
     }
+    
+
     else {
         burgerMenu1.classList.remove('displayBlock')
 
+    }
+    if( e.target.className !='hoverIcon' || e.target.className !='modern__hoverItems'){
+
+        modern__hoverItems1[0].classList.remove('displayBlock')
+        modern__hoverItems1[1].classList.remove('displayBlock')
+        modern__hoverItems1[2].classList.remove('displayBlock')
     }
 }
 popUpBut2.addEventListener('click', function () {
@@ -203,11 +236,22 @@ popUp1Close.addEventListener('click', function () {
     popUp1.classList.remove('displayFlex')
     document.body.classList.remove('overflow__hiden')
 })
-
+const catalog__mobile = document.querySelector('.catalog__mobile')
+const catalog__780 = document.querySelector('.catalog__780')
 const hotelNamesCat = [...document.querySelectorAll('.catalog__780 .hotel__names__main li')]
 const hotelBacks = [...document.querySelectorAll('.catalog__open_back_hotel')]
-
+const close__catalog780 = document.querySelector('.close__catalog780')
 const hotelBlocks = [...document.querySelectorAll('.catalog__open_hotels')]
+catalog__mobile.onclick = function () {
+    catalog__780.classList.add('displayBlock')
+}
+close__catalog780.onclick = function () {
+    catalog__780.classList.remove('displayBlock')
+
+}
+
+
+
 hotelNamesCat.forEach((e, i) => {
     hotelBacks[i].addEventListener('click', function () {
         hotelBlocks[i].classList.remove('displayBlock')

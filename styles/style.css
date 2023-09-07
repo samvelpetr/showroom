@@ -590,6 +590,75 @@
 
     }
 
+    .modern__hoverItems {
+        z-index: 10000000000;
+        position: absolute;
+        top: 155px;
+        left: 133px;
+        width: 320px;
+        display: none;
+        height: 354px;
+        background-size: cover;
+        background-image: url(./photo/modernHover2.png);
+    }
+
+    .modern__hoverItems2 {
+        top: 18px;
+        left: 885px;
+        background-image: url(./photo/modernHover1.png);
+    }
+
+    .modern__hoverItems1 {
+        top: 240px;
+        left: 500px;
+        background-image: url(./photo/modernHover3.png);
+    }
+
+    .modern__hoverItems1 .modern__hoverItems__text {
+        text-align: center;
+        top: 252px;
+    }
+
+    .nmoder__hoverItems_wrapper {
+        position: relative;
+    }
+
+    .modern__hoverItems__text {
+        position: absolute;
+        top: 307px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #D1CCCC;
+        width: 290px;
+        background: white;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .modern__hoverItems .furniture__element {
+        position: relative;
+    }
+
+    .hoverIcon {
+        position: absolute;
+        top: 294px;
+        left: 357px;
+        width: 34px;
+        height: 34px;
+    }
+
+    .hoverIcon1 {
+        top: auto;
+        left: 651px;
+        bottom: 108px;
+    }
+
+    .hoverIcon2 {
+        top: 158px;
+        left: auto;
+        right: 767px;
+    }
+
     .element12 {
         width: 472px;
         height: 416px;
@@ -1530,16 +1599,36 @@
     .overflow__hiden {
         overflow: hidden;
     }
-#furniture {
-    padding-bottom: 30px;
-}
-#salesHit h2{
-    padding-top: 20px;
-}
-.footer__lines {
-    margin-top: 0;
-    margin-bottom: 30px;
-}
+
+    #furniture {
+        padding-bottom: 30px;
+    }
+
+    #salesHit h2 {
+        padding-top: 20px;
+    }
+
+    .footer__lines {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .hoverIcon {
+        width: 50px !important;
+    }
+    .hoverIcon:hover .modern__hoverItems{
+        display: block;
+    }
+    .modern__hoverItems{
+        top: -160px;
+        left: 0;
+    }
+    .modern__hoverItems1{
+        top: -180px;
+    }
+    .modern__hoverItems2{
+        top: -140px;
+    }
     @media screen and (max-width:1730px) {
         .container {
             width: 1402px;
@@ -1629,6 +1718,35 @@
             justify-content: space-between;
         }
 
+        .hoverIcon {
+            width: 34px !important;
+            top: 193px;
+            left: 295px
+        }
+
+        .hoverIcon1 {
+            top: 331px;
+            left: 480px;
+        }
+
+        .hoverIcon2 {
+            left: 700px;
+        }
+
+        .modern__hoverItems {
+            top: -81px;
+            left: -156px;
+        }
+
+        .modern__hoverItems1 {
+            top: -174px;
+            left: -25px;
+        }
+
+        .modern__hoverItems2 {
+            left: -70px;
+        }
+
         .individualFurniture__text {
             margin-left: 100px;
             margin-right: 81px;
@@ -1691,6 +1809,14 @@
             gap: 52px 32px;
             justify-content: space-between;
         }
+
+        .hoverIcon {
+            width: 100px !important;
+            height: 100px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     .swiperFurniture2,
@@ -1716,6 +1842,22 @@
             gap: 0;
         }
 
+        .hoverIcon {
+            top: 133px;
+            left: 138px;
+        }
+        .hoverIcon:hover .modern__hoverItems{
+        }
+        
+        .hoverIcon1 {
+            top: 194px;
+            left: 308px;
+        }
+
+        .hoverIcon2 {
+            top: 160px;
+            left: 441px;
+        }        
         .header__icon1 {
             margin-right: 10px;
         }
@@ -1840,6 +1982,7 @@
     .modernCollection__swiper1 a {
         display: none;
     }
+    
 
     @media screen and (max-width:1100px) {
         .container {
@@ -1907,7 +2050,7 @@
         }
 
         .slide__text h4 {
-            transform: translate(231px, 166px);
+            transform: translate(231px, 190px);
         }
 
         .mainslider .swiper-pagination-bullet {
@@ -2256,9 +2399,11 @@
         }
 
         .catalog__780 {
-            display: block;
+            /* display: block; */
             position: absolute;
             background: white;
+            left: 80px;
+            top: 255px;
             z-index: 10000000;
             padding: 24px;
             width: 360px;
@@ -2281,6 +2426,10 @@
             flex-direction: column;
             gap: 16px;
             padding-bottom: 44px;
+        }
+
+        .salesHit__swiper .swiper-slide:hover {
+            height: 670px;
         }
 
         .catalog__780 a {
@@ -2327,6 +2476,7 @@
             gap: 20px;
             padding-bottom: 20px;
         }
+
     }
 
     @media screen and (max-width:725px) {
@@ -2393,6 +2543,10 @@
 
         .modernCollection__info-text h3 {
             font-size: 20px;
+        }
+
+        .salesHit__swiper .swiper-slide:hover {
+            height: 439px;
         }
 
         .modernCollection__info-text h4 {
@@ -2658,7 +2812,7 @@
         .location__map {
             height: auto;
             min-height: 374px;
-            
+
             background: url(./photo/map__mobile2.png);
             background-size: cover;
         }
