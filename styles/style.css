@@ -20,7 +20,9 @@
         width: 1724px;
         margin: auto;
     }
-
+#addedToCartSvg{
+    display: none;
+}
     .header__block1 {
         background: #8CAFC5;
         padding: 10px 0;
@@ -42,7 +44,7 @@
 
     .header__block2 {
         margin-top: 23px;
-        padding: 25px 0 23px;
+        padding: 16px 0 23px;
         display: flex;
         gap: 40px;
         justify-content: space-between;
@@ -121,7 +123,7 @@
     .header__block3 {
         display: flex;
         justify-content: space-between;
-        padding: 25px 0 24px;
+        padding: 7px 0 24px;
         align-items: center;
     }
 
@@ -1261,7 +1263,7 @@
     }
 
     .footer__info__icons {
-        margin-top: 132px;
+        margin-top: 70px;
         display: flex;
         gap: 9px;
         align-items: center;
@@ -1299,7 +1301,7 @@
         position: absolute;
         width: 100%;
         height: 444px;
-        top: 250px;
+        top: 220px;
         left: 0;
         display: none;
         padding: 29px 32px 32px;
@@ -1341,6 +1343,15 @@
 
     .displayBlock {
         display: block !important;
+    }
+
+    #hotels_active {
+        color: #1E1E1E !important;
+    }
+
+    #hotels_active:hover {
+        text-decoration: none !important;
+        color: #1E1E1E !important;
     }
 
     .header__backcall p {
@@ -1646,15 +1657,17 @@
         top: 0;
         right: 0;
     }
-    .showroom_mobile360:hover .showroomPopUp{
+
+    .showroom_mobile360:hover .showroomPopUp {
         display: block;
     }
-    .showroomPopUp{
-        display: none; 
-        left: 0;
+
+    .showroomPopUp {
+        display: none;
+        left: -160px;
         top: 0;
     }
-    
+
     .showroomLine {
         width: 100px;
         background: #575757;
@@ -1727,9 +1740,357 @@
         text-align: center;
         display: block;
     }
-    .header__gps:hover .showroomPopUp{
+
+    .header__gps:hover .showroomPopUp {
         display: block;
     }
+
+    #activeColection {
+        padding-top: 20px;
+    }
+
+    .activeCollectionNavHome {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .activeCollectionNavHome a {
+        color: #575757;
+    }
+
+    .activeColection__main {
+        margin-top: 40px;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .colectionNames h3 {
+        font-size: 28px;
+        font-weight: 600;
+        padding-bottom: 32px;
+    }
+
+    .colectionNames ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .colectionNames ul li a {
+        color: #575757;
+    }
+
+    .colectionLiActive {
+        color: #1E1E1E !important;
+    }
+
+    .colectionLine {
+        width: 1px;
+        height: 454px;
+        background-color: #818181;
+    }
+
+    .colectionPhotos {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .colectionPhotosElement {
+        position: relative;
+        width: 254px;
+        background: url(./photo/allcolection1.png);
+        height: 193px;
+    }
+
+    .colectionPhotosElement2 {
+        background: url(./photo/allcolection2.png);
+    }
+
+    .colectionPhotosElement3 {
+        background: url(./photo/allcolection3.png);
+    }
+
+    .colectionPhotosElement4 {
+        background: url(./photo/allcolection4.png);
+    }
+
+    .colectionPhotosElement5 {
+        background: url(./photo/allcolection5.png);
+    }
+
+    .colectionPhotosElement6 {
+        background: url(./photo/allcolection6.png);
+    }
+
+    .colectionPhotosElement7 {
+        background: url(./photo/allcolection7.png);
+    }
+
+    .colectionPhotosElement_text {
+        background: white;
+        border: 1px solid #818181;
+        padding: 10px 20px;
+        position: absolute;
+        font-weight: 300;
+        bottom: -22px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        text-align: center;
+    }
+
+    .colectionProduct {
+        width: 542px;
+
+    }
+
+    .colectionProduct .product__photo {
+        background: url(/styles/photo/kub2.png);
+        background-size: cover;
+        min-height: 310px;
+    }
+
+    .product__photo div {
+        width: fit-content;
+    }
+
+    .colectionProduct2 .product__photo {
+        background: url(./photo/kub3.png);
+    }
+
+    .colectionProduct3 .product__photo {
+        background: url(./photo/kub4.png);
+    }
+
+    .colectionProduct .product__photo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-right: 7px;
+        padding-top: 10px;
+    }
+
+    .colectionProduct .product__addToCart {
+        width: 100%;
+    }
+
+    .product__addToCart:hover span {
+        color: white;
+        transition: .3s;
+    }
+
+    .collectionKuba__wrapper h2 {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .collectionKuba__wrapper>img {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 47px;
+    }
+
+    .colectionsProduct_main {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .colectionProduct .product__art p {
+        margin-top: 12px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+
+    .product__available {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 50px;
+    }
+
+    .colectionProductSeparate {
+        width: 400px;
+
+    }
+
+    .colectionProductSeparate .product__photo {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-right: 7px;
+        align-items: flex-start;
+    }
+
+    .product__art {
+        text-align: right;
+    }
+
+    #separateProductColection h2 {
+        padding: 40px 0;
+    }
+
+    .colectionProductSeparate .product__price {
+        padding-top: 53px;
+        font-weight: 600;
+    }
+
+    .colectionProductSeparate .product__price del {
+        font-weight: 400;
+    }
+
+    .colectionProduct6 .product__photo {
+        background: url(./photo/kubelem3.png);
+        min-height: 405px;
+    }
+
+    .colectionProduct5 .product__photo {
+        min-height: 405px;
+        background: url(./photo/kubelem2.png);
+    }
+
+    .colectionProduct4 .product__photo {
+        min-height: 405px;
+        background: url(./photo/kubelem1.png);
+    }
+
+    .colectionProduct7 .product__photo {
+        min-height: 310px;
+        background: url(./photo/rim1.png);
+    }
+
+    .colectionProduct8 .product__photo {
+        min-height: 310px;
+        background: url(./photo/rim2.png);
+    }
+
+    .colectionProduct9 .product__photo {
+        min-height: 310px;
+        background: url(./photo/rim3.png);
+    }
+
+    .colectionProduct .product__price {
+        font-weight: 600;
+    }
+
+    .colectionProduct .product__price del {
+        font-weight: 400;
+    }
+
+    .colectionProduct10 .product__photo {
+        background: url(./photo/rim4.png);
+        min-height: 405px;
+    }
+
+    .colectionProduct11 .product__photo {
+
+        min-height: 405px;
+        background: url(./photo/rim5.png);
+    }
+
+    .colectionProduct12 .product__photo {
+        min-height: 405px;
+        background: url(./photo/rim6.png);
+    }
+
+    .product__addedInCart {
+        display: flex;
+        gap: 8px;
+        margin-top: 25px;
+    }
+
+    .product__addedToCart {
+        width: 253px;
+        background: #8CAFC5;
+        color: white;
+        font-size: 18px;
+        padding: 20px 10px;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+    }
+
+    .productCount {
+        border: 3px solid #8CAFC5;
+        padding: 20px 10px;
+        width: 125px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+
+    }
+
+    .productCount button {
+        background: white;
+        border: none;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .productCount_minus {
+        margin-bottom: 2px;
+    }
+
+    #count {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .colectionProduct13 .product__photo {
+        background: url(./photo/sugar2.png);
+    }
+
+    .colectionProduct14 .product__photo {
+        background: url(./photo/sugar3.png);
+    }
+
+    .colectionProduct15 .product__photo {
+        background: url(./photo/sugar4.png);
+    }
+
+    .colectionProduct16 .product__photo {
+        min-height: 405px;
+        background: url(./photo/sugar5.png);
+
+    }
+
+    .colectionProduct17 .product__photo {
+        min-height: 405px;
+        background: url(./photo/sugar6.png);
+
+    }
+
+    .colectionProduct18 .product__photo {
+        min-height: 405px;
+        background: url(./photo/sugar7.png);
+
+    }
+
+    .colectionProductSeparate .product__addToCart {
+        width: 100%;
+    }
+
+    .colectionPhotosSlider {
+        display: none !important;
+        padding-bottom: 30px !important;
+    }
+
+
+
+
+
+
+
     @media screen and (max-width:1730px) {
         .container {
             width: 1402px;
@@ -1749,6 +2110,18 @@
 
         .header__backcall {
             margin-right: 25px;
+        }
+
+        .colectionProduct {
+            width: 446px;
+        }
+
+        .colectionsProduct_main {
+            gap: 32px;
+        }
+
+        .colectionProduct .product__photo {
+            min-height: 300px;
         }
 
         .modernCollection__swiper1 .swiper-slide>img {
@@ -1930,7 +2303,7 @@
         display: none !important;
     }
 
-    @media screen and (max-width:1420px) {
+    @media screen and (max-width:1470px) {
         .container {
             width: 100%;
         }
@@ -1946,6 +2319,19 @@
         .hoverIcon {
             top: 133px;
             left: 138px;
+        }
+
+        .collectionKuba__wrapper>img {
+            width: 1227px;
+        }
+
+        .activeColection__main {
+            gap: 20px;
+        }
+
+        .colectionsProduct_main {
+            gap: 20px;
+            justify-content: space-around;
         }
 
         .hoverIcon:hover .modern__hoverItems {}
@@ -2102,9 +2488,26 @@
             background: rgba(140, 175, 197, 0.70);
         }
 
+        .colectionPhotos {
+            display: none;
+        }
+
+        .colectionPhotosSlider {
+            display: block !important;
+            margin-top: 30px;
+        }
+
         .header__block1_mobile .container {
             display: flex;
             justify-content: space-between;
+        }
+
+        .colectionProduct {
+            width: 348px;
+        }
+
+        .colectionProductSeparate {
+            width: 348px;
         }
 
         .burger__menuIcon {
@@ -2504,7 +2907,7 @@
             /* display: block; */
             position: absolute;
             background: white;
-            left: 0px;
+            left: 115px;
             top: 235px;
             z-index: 10000000;
             padding: 24px;
@@ -2579,7 +2982,25 @@
             padding-bottom: 20px;
         }
 
+        .collectionKuba__wrapper>img {
+            width: 720px;
+        }
+
+        .activeColection__main {
+            flex-direction: column;
+        }
+
+        .colectionLine {
+            height: 1px;
+            width: 720px;
+        }
+
+        .colectionNames ul {
+            height: 224px;
+            flex-wrap: wrap;
+        }
     }
+
 
     @media screen and (max-width:725px) {
         .container {
@@ -3103,9 +3524,11 @@
         .burgerMenu1 {
             display: none !important;
         }
+
         a.showroom__seeGalery1 {
             color: white !important;
         }
+
         .catalog__360 {
             left: 0;
             top: 0;
@@ -3136,7 +3559,7 @@
             padding-left: 24px;
         }
 
-        .catalog__360_mobile1 > div {
+        .catalog__360_mobile1>div {
             margin-top: 150px;
             width: 100vw;
             padding: 24px 0;
@@ -3150,14 +3573,14 @@
             left: 0;
         }
 
-        .catalog__360_mobile1 > div p {
+        .catalog__360_mobile1>div p {
             font-size: 16px;
             padding-left: 24px;
             font-weight: 600;
             padding-bottom: 8px;
         }
 
-        .catalog__360_mobile1 > div span {
+        .catalog__360_mobile1>div span {
             padding-left: 24px;
             font-size: 14px;
             cursor: pointer;
@@ -3173,15 +3596,92 @@
         .catalog__360 {
             overflow-x: hidden;
         }
-        .reviews__main:hover{
-            height:155px;
+
+        .reviews__main:hover {
+            height: 155px;
         }
-        .reviews__main:hover span{
+
+        .reviews__main:hover span {
             white-space: initial;
             overflow: visible !important;
             overflow-y: hidden !important;
             text-overflow: initial;
             height: 101px;
+        }
+
+        .colectionNames ul {
+            height: 200px;
+        }
+
+        .colectionPhotosElement {
+            width: 156px;
+            height: 118px;
+            background-size: contain;
+        }
+
+        .collectionKuba__wrapper>img {
+            width: 328px;
+            min-height: 150px;
+        }
+
+        .colectionProduct {
+            width: 156px;
+        }
+
+        .colectionsProduct_main {
+            gap: 16px;
+            justify-content: flex-start;
+        }
+
+        .colectionProduct .product__photo {
+            min-height: 120px;
+            background-size: cover;
+        }
+
+        .product__art img {
+            width: 70px;
+        }
+
+        .colectionProduct .product__art p {
+            font-size: 10px;
+        }
+
+        .product__available {
+            font-size: 12px;
+        }
+
+        .colectionProductSeparate {
+            width: 148px;
+        }
+
+        .colectionProductSeparate .product__photo {
+            min-height: 168px;
+            background-size: cover;
+
+        }
+        .product__addedToCart{
+            width: 56px;
+            font-size: 0;
+            padding: 0;
+            display: flex;align-items: center;
+            justify-content: center;
+            background: white;
+            border: 1px solid #8CAFC5;
+        }
+        .productCount{
+            width: 80px;
+            gap: 14px;
+            height: 44px;
+        }
+        #addedToCartSvg{
+            display: block;
+        }
+        .colectionLine{
+            width: 100%;
+        }
+        .colectionNames ul{
+            gap: 16px;
+            width: 56%;
         }
     }
 
