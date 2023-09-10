@@ -20,9 +20,11 @@
         width: 1724px;
         margin: auto;
     }
-#addedToCartSvg{
-    display: none;
-}
+
+    #addedToCartSvg {
+        display: none;
+    }
+
     .header__block1 {
         background: #8CAFC5;
         padding: 10px 0;
@@ -1785,11 +1787,13 @@
 
     .colectionLiActive {
         color: #1E1E1E !important;
+        font-weight: 400 !important;
     }
 
     .colectionLine {
         width: 1px;
         height: 454px;
+        align-self: center;
         background-color: #818181;
     }
 
@@ -1839,33 +1843,72 @@
         bottom: -22px;
         left: 50%;
         transform: translateX(-50%);
-        width: fit-content;
+        width: max-content;
         text-align: center;
     }
-
+    #salesSect >h2{
+        padding-top: 124px;
+        text-align: center;
+    }
     .colectionProduct {
         width: 542px;
 
     }
-
+    #salesSect .container h2{
+        padding: 40px 0;
+    }
     .colectionProduct .product__photo {
         background: url(/styles/photo/kub2.png);
         background-size: cover;
         min-height: 310px;
+    }   
+    .colectionProduct26 .product__photo{
+        background: url(./photo/badrooms.png);
     }
-
     .product__photo div {
         width: fit-content;
     }
 
     .colectionProduct2 .product__photo {
         background: url(./photo/kub3.png);
+
     }
 
-    .colectionProduct3 .product__photo {
-        background: url(./photo/kub4.png);
+    .colectionProduct27 .product__photo{
+        min-height: 405px;
+        background: url(./photo/badrooms1.png);
+
+    }
+    .colectionProduct28 .product__photo{
+        min-height: 405px;
+        background: url(./photo/badrooms2.png);
+
+    }
+    .colectionProduct29 .product__photo{
+        background: url(./photo/lobby.png);
     }
 
+    .colectionProduct30 .product__photo{
+        background: url(./photo/lobby1.png);
+        min-height: 405px;
+
+    }
+    .colectionProduct31 .product__photo{
+        background: url(./photo/furnit1.png);
+        min-height: 405px;
+    }
+    .colectionProduct32 .product__photo{
+        background: url(./photo/furnit2.png);
+        min-height: 405px;
+    }
+    .colectionProduct33 .product__photo{
+        min-height: 405px;
+        background: url(./photo/minform1.png);
+    }
+    .colectionProduct34 .product__photo{
+        background: url(./photo/minform2.png);
+        min-height: 405px;
+    }
     .colectionProduct .product__photo {
         display: flex;
         align-items: flex-start;
@@ -1894,12 +1937,26 @@
         margin-bottom: 47px;
     }
 
+    .colectionProduct19 .product__photo {
+        background: url(./photo/burn2.png);
+    }
+
+    .colectionProduct20 .product__photo{
+        background: url(./photo/burn3.png);
+    }
+
+    .colectionProduct21 .product__photo {
+        background: url(./photo/burn4.png);
+    }
+
     .colectionsProduct_main {
         display: flex;
         gap: 40px;
         flex-wrap: wrap;
     }
-
+    .collectionBurn{
+        padding-top: 50px;
+    }
     .colectionProduct .product__art p {
         margin-top: 12px;
         display: flex;
@@ -1907,7 +1964,36 @@
         justify-content: flex-end;
         gap: 12px;
     }
+    .colectionProduct22 .product__photo{
+        background: url(./photo/product1.png);
+        min-height: 405px;
+    }
+    .colectionProduct23 .product__photo{
+        background: url(./photo/product2.png);
+        min-height: 405px;
+    }
+    .colectionProduct24 .product__photo{
+        min-height: 405px;
+        background: url(./photo/product3.png);
+    }
 
+    .colectionProduct25 .product__photo{
+        min-height: 405px;
+        background: url(./photo/product4.png);    
+    }
+   
+    .colectionPhotosElement7{
+        background: url(./photo/sales1.png);
+    }
+    .colectionPhotosElement8{
+        background: url(./photo/sales2.png);
+    }
+    .colectionPhotosElement9{
+        background: url(./photo/sales3.png);
+    }
+    .colectionPhotosElement10{
+        background: url(./photo/sales4.png);
+    }
     .product__available {
         display: flex;
         align-items: center;
@@ -2107,7 +2193,9 @@
         .header__icon1 {
             margin-right: 20px;
         }
-
+        .colectionPhotos{
+            width: 1433px;
+        }
         .header__backcall {
             margin-right: 25px;
         }
@@ -2315,7 +2403,9 @@
         .header__block2 {
             gap: 0;
         }
-
+        .colectionPhotos{
+            width: 993px;
+        }
         .hoverIcon {
             top: 133px;
             left: 138px;
@@ -2999,7 +3089,26 @@
             height: 224px;
             flex-wrap: wrap;
         }
-    }
+        .activeColection__main2{
+            flex-direction: row;
+        }
+        .activeColection__main2 .colectionNames ul{
+            height: 385px;
+        }
+        .colectionLine2{
+            width: 1px;
+            height: 418px;
+        }
+        .activeColection__main2 .colectionPhotos{
+            display: block;
+            height: 418px;
+            background: url(./photo/burn5.png);
+            width: 100%;
+        }
+        .activeColection__main2 .colectionPhotos img{
+            display: none;
+        }
+    }   
 
 
     @media screen and (max-width:725px) {
@@ -3651,7 +3760,7 @@
         }
 
         .colectionProductSeparate {
-            width: 148px;
+            width: 152px;
         }
 
         .colectionProductSeparate .product__photo {
@@ -3659,30 +3768,54 @@
             background-size: cover;
 
         }
-        .product__addedToCart{
+
+        .product__addedToCart {
             width: 56px;
             font-size: 0;
             padding: 0;
-            display: flex;align-items: center;
+            display: flex;
+            align-items: center;
             justify-content: center;
             background: white;
             border: 1px solid #8CAFC5;
         }
-        .productCount{
+
+        .productCount {
             width: 80px;
             gap: 14px;
             height: 44px;
         }
-        #addedToCartSvg{
+
+        #addedToCartSvg {
             display: block;
         }
-        .colectionLine{
+
+        .colectionLine {
             width: 100%;
         }
-        .colectionNames ul{
+
+        .colectionNames ul {
             gap: 16px;
             width: 56%;
         }
+         .activeColection__main2{
+            flex-direction: column;
+        }
+        .activeColection__main2 .colectionNames ul{
+            height: 188px;
+        }
+        .colectionLine2{
+            width: 100%;
+            height: 1px;
+        }
+        .activeColection__main2 .colectionPhotos{
+            background: none;
+            height: 90px;    
+        }
+        .activeColection__main2 .colectionPhotos img{
+            display: block;
+        }
+        
     }
 
     @media screen and (max-width:460px) {
