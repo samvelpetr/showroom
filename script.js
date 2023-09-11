@@ -231,14 +231,24 @@ document.body.onclick = function (e) {
     }
 
 }
-popUpBut2.addEventListener('click', function () {
-    popUp1.classList.add('displayFlex')
-    document.body.classList.add('overflow__hiden')
-})
-popup1But.addEventListener('click', function () {
-    popUp1.classList.add('displayFlex')
-    document.body.classList.add('overflow__hiden')
-})
+try {
+    popUpBut2.addEventListener('click', function () {
+        popUp1.classList.add('displayFlex')
+        document.body.classList.add('overflow__hiden')
+    })
+} catch (error) {
+
+}
+
+try {
+    popup1But.addEventListener('click', function () {
+        popUp1.classList.add('displayFlex')
+        document.body.classList.add('overflow__hiden')
+    })
+
+} catch (error) {
+    
+}
 try {
 
     popUp1Close.addEventListener('click', function () {
