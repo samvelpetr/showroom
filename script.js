@@ -5,9 +5,9 @@ const swiper = new Swiper('.mainslider', {
     },
     loop: true,
     slidesPerView: 1,
-    // autoplay: {
-    //     delay: 2000,
-    // }
+    autoplay: {
+        delay: 2000,
+    }
 });
 const swiper1 = new Swiper('.modernCollection__swiper1', {
     navigation: {
@@ -30,9 +30,9 @@ const swiper1 = new Swiper('.modernCollection__swiper1', {
         }
     },
 
-    // autoplay: {
-    //     delay: 2000,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
 
 
 });
@@ -58,9 +58,9 @@ const swiper4 = new Swiper('.modernCollection__swiper3', {
         }
     },
 
-    // autoplay: {
-    //     delay: 2000,
-    // },
+    autoplay: {
+        delay: 2000,
+    },
 
 });
 const swiper5 = new Swiper('.swiperFurniture', {
@@ -149,6 +149,7 @@ const swiper3 = new Swiper('.reviews__swiper', {
 let furNames1 = [...document.querySelectorAll('.furniture__namesSwiper li')]
 let furNames = [...document.querySelectorAll('.furniture__names ul li')]
 let furItems = [...document.querySelectorAll('.furnitures_wrapper > div')]
+try {
 
 furNames1.forEach((element, index) => {
     element.addEventListener('click', function () {
@@ -160,6 +161,7 @@ furNames1.forEach((element, index) => {
         furItems[index].classList.add('furniture-active')
     })
 })
+    
 
 furNames.forEach((element, index) => {
     element.addEventListener('click', function () {
@@ -171,6 +173,9 @@ furNames.forEach((element, index) => {
         furItems[index].classList.add('furniture-active')
     })
 })
+} catch (error) {
+    
+}
 const hotel = document.querySelector('#hotels')
 const hotelBlock = document.querySelector('.hotel__hover')
 const popUp1 = document.querySelector('.takeBackCall__mother')
@@ -247,7 +252,7 @@ try {
     })
 
 } catch (error) {
-    
+
 }
 try {
 
@@ -305,7 +310,6 @@ close__catalog360.onclick = function () {
     catalog__360.classList.remove('displayBlock')
 
 }
-console.log(hotelNamesCat1);
 try {
 
     hotelNamesCat1.forEach((e, i) => {
@@ -335,3 +339,109 @@ try {
 } catch (error) {
 
 }
+
+
+const radioElement = [...document.querySelectorAll('.radioElement')].splice(0, 4)
+const radio = [...document.querySelectorAll('.radioElement input')].splice(0, 4)
+const radioElement3 = [...document.querySelectorAll('.delivery__payment__method .radioElement')]
+
+const radio3 = [...document.querySelectorAll('.delivery__payment__method .radioElement input')]
+
+const radioElement1 = [...document.querySelectorAll('.radioELement1')]
+const radio1 = [...document.querySelectorAll('.radioELement1 input')]
+try {
+
+
+    radioElement1.forEach((e, i) => {
+
+        e.addEventListener('click', function () {
+            radioElement1.forEach(e =>
+                e.classList.remove('radioElement2')
+            )
+            radio1[i].checked = true
+            e.classList.add('radioElement2')
+
+        })
+    })
+    radioElement3.forEach((e, i) => {
+
+        e.addEventListener('click', function () {
+            radioElement3.forEach(e =>
+                e.classList.remove('radioElement2')
+            )
+            radio3[i].checked = true
+            e.classList.add('radioElement2')
+
+        })
+    })
+
+    radioElement.forEach((e, i) => {
+
+        e.addEventListener('click', function () {
+            radioElement.forEach(e =>
+                e.classList.remove('radioElement2')
+            )
+            radio[i].checked = true
+            e.classList.add('radioElement2')
+            if (i == 2) {
+                document.querySelector('.delivery__delInfo').classList.add('displayFlex')
+                document.querySelector('.delivery_delHomeInfo').classList.remove('displayFlex')
+            } else {
+                document.querySelector('.delivery_delHomeInfo').classList.add('displayFlex')
+
+                document.querySelector('.delivery__delInfo').classList.remove('displayFlex')
+
+            }
+        })
+    })
+
+
+    const MakeOrder = document.querySelector('#MakeOrder')
+    const delivery__mother = document.querySelector('.delivery__mother')
+    const closeDel = document.querySelector('.delivery__nameLine a')
+    MakeOrder.addEventListener('click', function () {
+        delivery__mother.classList.add('displayBlock')
+    })
+    closeDel.addEventListener('click', function () {
+        delivery__mother.classList.remove('displayBlock')
+
+    })
+}
+catch (error) {
+}
+const h3ComplectSvg = document.querySelector('.h3Complect svg');
+
+const h3Complect = document.querySelector('.h3Complect');
+const imgs = [...document.querySelectorAll('.descriptionUl img')]
+
+h3Complect.addEventListener('click', function () {
+    h3ComplectSvg.classList.toggle('rotate')
+    imgs.map(e => {
+        e.classList.toggle('displayBlock')
+    })
+})
+
+const descLi = document.querySelectorAll('.descriptionAndChar > ul li')
+const desc1 = document.querySelector('.description__part')
+const desc2 = document.querySelector('.complectation')
+const desc3 = document.querySelector('.reviewsPart')
+console.log(descLi);
+const descs = [desc1, desc2, desc3]
+descLi.forEach((e, i) => {
+    e.addEventListener('click', function () {
+        descLi.forEach((el,index) => {
+            el.classList.remove('fur-active')
+            descs[index].classList.remove('displayFlex')
+            descs[index].classList.remove('displayBlock')
+            console.log(el);
+        })
+        e.classList.add('fur-active')
+        if (i==2) {
+            descs[i].classList.add('displayBlock')
+            
+        }else{
+            descs[i].classList.add('displayFlex')
+
+        }
+    })
+})
