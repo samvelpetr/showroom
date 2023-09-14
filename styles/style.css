@@ -6090,7 +6090,7 @@
         }
 
         .salesHit__swiper .swiper-slide:hover {
-            height: 439px;
+            height: auto;
         }
 
         .modernCollection__info-text h4 {
@@ -6650,7 +6650,7 @@
         }
 
         .colectionNames ul {
-            height: 200px;
+            height: 280px;
         }
 
         .colectionPhotosElement {
