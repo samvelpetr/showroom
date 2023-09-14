@@ -5,9 +5,9 @@ const swiper = new Swiper('.mainslider', {
     },
     loop: true,
     slidesPerView: 1,
-    autoplay: {
-        delay: 2000,
-    }
+    // autoplay: {
+    //     delay: 2000,
+    // }
 });
 const swiper1 = new Swiper('.modernCollection__swiper1', {
     navigation: {
@@ -147,13 +147,13 @@ const swiper3 = new Swiper('.reviews__swiper', {
 
 });
 
-const header__icon2 =document.querySelector('.header__icon2')
-const favoritePopUp__mother =document.querySelector('.favoritePopUp__mother')
-const closePopUp1 =document.querySelector('.closePopUp1') 
-header__icon2.onclick=function(){
+const header__icon2 = document.querySelector('.header__icon2')
+const favoritePopUp__mother = document.querySelector('.favoritePopUp__mother')
+const closePopUp1 = document.querySelector('.closePopUp1')
+header__icon2.onclick = function () {
     favoritePopUp__mother.classList.add('displayBlock')
 }
-closePopUp1.onclick= function(){
+closePopUp1.onclick = function () {
     favoritePopUp__mother.classList.remove('displayBlock')
 
 }
@@ -162,95 +162,128 @@ closePopUp1.onclick= function(){
 
 
 
-const forPartners__mother= document.querySelector('.forPartners__mother')
-const forPartners__close=document.querySelector('#forPartners__close')
+const forPartners__mother = document.querySelector('.forPartners__mother')
+const forPartners__close = document.querySelector('#forPartners__close')
 
-const forPartnersBut= document.querySelectorAll('.forPartnersBut')
+const forPartnersBut = document.querySelectorAll('.forPartnersBut')
+try {
+    forPartnersBut[0].onclick = function () {
+        forPartners__mother.classList.add('displayFlex')
+    }
+    forPartnersBut[1].onclick = function () {
+        forPartners__mother.classList.add('displayFlex')
+    }
 
-forPartnersBut[0].onclick=function(){
-    forPartners__mother.classList.add('displayFlex')
-}
-forPartnersBut[1].onclick=function(){
-    forPartners__mother.classList.add('displayFlex')
-}
-
-forPartnersBut[2].onclick=function(){
-    forPartners__mother.classList.add('displayFlex')
-}
+    forPartnersBut[2].onclick = function () {
+        forPartners__mother.classList.add('displayFlex')
+    }
 
 
-forPartners__close.onclick=function(){
-    forPartners__mother.classList.remove('displayFlex')
-}
+    forPartners__close.onclick = function () {
+        forPartners__mother.classList.remove('displayFlex')
+    }
 
-const credit__mother =document.querySelector('.credit__mother')
-const creditPopUpBut =document.querySelectorAll('.creditPopUpBut')
-const paymentPopUp__mother =document.querySelector('.paymentPopUp__mother')
-const closePopUp3 =document.querySelector('.closePopUp3')
-const closePopUp4 =document.querySelector('.closePopUp4')
-const paymentPopUpBut =document.querySelector('.paymentPopUpBut')
-creditPopUpBut[0].onclick=function(){
-    credit__mother.classList.add('displayFlex')
-}
-creditPopUpBut[1].onclick=function(){
-    credit__mother.classList.add('displayFlex')
-}
-creditPopUpBut[2].onclick=function(){
-    credit__mother.classList.add('displayFlex')
-}
-creditPopUpBut[3].onclick=function(){
-    credit__mother.classList.add('displayFlex')
-}
-closePopUp4.onclick=function(){
-
-    credit__mother.classList.remove('displayFlex')
+} catch (error) {
 
 }
+const creditBut2 = document.querySelectorAll('p.credit')
 
-paymentPopUpBut.onclick=function(){
-    paymentPopUp__mother.classList.add('displayFlex')
+const credit__mother = document.querySelector('.credit__mother')
+const creditPopUpBut = document.querySelectorAll('.creditPopUpBut')
+const paymentPopUp__mother = document.querySelector('.paymentPopUp__mother')
+const closePopUp3 = document.querySelector('.closePopUp3')
+const closePopUp4 = document.querySelector('.closePopUp4')
+const paymentPopUpBut = document.querySelector('.paymentPopUpBut')
+const delivery__conditions=document.querySelectorAll('.delivery__conditions')
+
+try {
+
+    creditBut2[0].onclick = function () {
+        // alert('helo')
+        credit__mother.classList.add('displayFlex')
+    }
+    creditBut2[1].onclick = function () {
+        // alert('helo')
+        credit__mother.classList.add('displayFlex')
+    }
+} catch (err) { }
+try {
+    creditPopUpBut[0].onclick = function () {
+        credit__mother.classList.add('displayFlex')
+    }
+    creditPopUpBut[1].onclick = function () {
+        credit__mother.classList.add('displayFlex')
+    }
+    creditPopUpBut[2].onclick = function () {
+        credit__mother.classList.add('displayFlex')
+    }
+    creditPopUpBut[3].onclick = function () {
+        credit__mother.classList.add('displayFlex')
+    }
+    closePopUp4.onclick = function () {
+
+        credit__mother.classList.remove('displayFlex')
+
+    }
+
+    paymentPopUpBut.onclick = function () {
+        paymentPopUp__mother.classList.add('displayFlex')
+    }
+
+    closePopUp3.onclick = function () {
+
+        paymentPopUp__mother.classList.remove('displayFlex')
+
+    }
+
+} catch (error) {
+
 }
 
-closePopUp3.onclick=function(){
 
-    paymentPopUp__mother.classList.remove('displayFlex')
+
+
+
+
+
+
+const furnitureToOrderBut = document.querySelectorAll('.furnitureToOrderBut')
+const furnitureToOrder__mother = document.querySelector('.furnitureToOrder__mother');
+const furnitureOrder__close = document.querySelector('#furnitureOrder__close')
+try {
+    furnitureOrder__close.onclick = function () {
+        document.body.classList.remove('overflow__hiden')
+
+        furnitureToOrder__mother.classList.remove('displayFlex')
+    }
+    furnitureToOrderBut[0].onclick = function () {
+        document.body.classList.add('overflow__hiden')
+        furnitureToOrder__mother.classList.add('displayFlex')
+    }
+    furnitureToOrderBut[1].onclick = function () {
+        furnitureToOrder__mother.classList.add('displayFlex')
+    }
+    furnitureToOrderBut[2].onclick = function () {
+        furnitureToOrder__mother.classList.add('displayFlex')
+    }
+
+
+} catch (error) {
 
 }
+const header__icon3 = document.querySelector('.header__icon3')
+const basketPopUp__mother = document.querySelector('.basketPopUp__mother')
+const closePopUp2 = document.querySelector('.closePopUp2')
+try {
+    header__icon3.onclick = function () {
+        basketPopUp__mother.classList.add('displayBlock')
+    }
+    closePopUp2.onclick = function () {
+        basketPopUp__mother.classList.remove('displayBlock')
 
+    }
 
-
-
-
-
-
-
-const furnitureToOrderBut=document.querySelectorAll('.furnitureToOrderBut')
-const furnitureToOrder__mother =document.querySelector('.furnitureToOrder__mother');
-const furnitureOrder__close =document.querySelector('#furnitureOrder__close')
-furnitureOrder__close.onclick=function(){
-    document.body.classList.remove('overflow__hiden')
-
-    furnitureToOrder__mother.classList.remove('displayFlex')
-}
-furnitureToOrderBut[0].onclick=function(){
-    document.body.classList.add('overflow__hiden')
-    furnitureToOrder__mother.classList.add('displayFlex')
-}
-furnitureToOrderBut[1].onclick=function(){
-    furnitureToOrder__mother.classList.add('displayFlex')
-}
-furnitureToOrderBut[2].onclick=function(){
-    furnitureToOrder__mother.classList.add('displayFlex')
-}
-
-const header__icon3 =document.querySelector('.header__icon3')
-const basketPopUp__mother =document.querySelector('.basketPopUp__mother')
-const closePopUp2 =document.querySelector('.closePopUp2') 
-header__icon3.onclick=function(){
-    basketPopUp__mother.classList.add('displayBlock')
-}
-closePopUp2.onclick= function(){
-    basketPopUp__mother.classList.remove('displayBlock')
+} catch (error) {
 
 }
 
@@ -259,30 +292,30 @@ let furNames = [...document.querySelectorAll('.furniture__names ul li')]
 let furItems = [...document.querySelectorAll('.furnitures_wrapper > div')]
 try {
 
-furNames1.forEach((element, index) => {
-    element.addEventListener('click', function () {
-        furNames1.forEach((el, i) => {
-            el.classList.remove('fur-active')
-            furItems[i].classList.remove('furniture-active')
+    furNames1.forEach((element, index) => {
+        element.addEventListener('click', function () {
+            furNames1.forEach((el, i) => {
+                el.classList.remove('fur-active')
+                furItems[i].classList.remove('furniture-active')
+            })
+            element.classList.add('fur-active')
+            furItems[index].classList.add('furniture-active')
         })
-        element.classList.add('fur-active')
-        furItems[index].classList.add('furniture-active')
     })
-})
-    
 
-furNames.forEach((element, index) => {
-    element.addEventListener('click', function () {
-        furNames.forEach((el, i) => {
-            el.classList.remove('fur-active')
-            furItems[i].classList.remove('furniture-active')
+
+    furNames.forEach((element, index) => {
+        element.addEventListener('click', function () {
+            furNames.forEach((el, i) => {
+                el.classList.remove('fur-active')
+                furItems[i].classList.remove('furniture-active')
+            })
+            element.classList.add('fur-active')
+            furItems[index].classList.add('furniture-active')
         })
-        element.classList.add('fur-active')
-        furItems[index].classList.add('furniture-active')
     })
-})
 } catch (error) {
-    
+
 }
 const hotel = document.querySelector('#hotels')
 const hotelBlock = document.querySelector('.hotel__hover')
@@ -299,7 +332,74 @@ const hoverIcon = [...document.querySelectorAll('.hoverIcon')].splice(0, 3)
 const hoverIcon1 = [...document.querySelectorAll('.hoverIcon')].splice(3)
 const modern__hoverItems = [...document.querySelectorAll('.modern__hoverItems')].splice(0, 3)
 const modern__hoverItems1 = [...document.querySelectorAll('.modern__hoverItems')].splice(3)
+const deliveryPopUp__mother = document.querySelector('.deliveryPopUp__mother')
+const deliveryPopUpBut = document.querySelector('.deliveryPopUpBut')
+const closePopUp5 = document.querySelector('.closePopUp5')
 
+
+
+try {
+    delivery__conditions[0].onclick = function () {
+        deliveryPopUp__mother.classList.add('displayFlex')
+    
+    }
+    delivery__conditions[1].onclick = function () {
+        paymentPopUp__mother.classList.add('displayFlex')
+    
+    }
+} catch (error) {
+    
+}
+
+
+const buyClickPopUp__mother = document.querySelector('.buyClickPopUp__mother')
+
+const buyClickPopUp__close = document.querySelector('#buyClickPopUp__close')
+
+const product__buy1click = document.querySelector('.product__buy1click')
+deliveryPopUpBut.onclick = function () {
+    deliveryPopUp__mother.classList.add('displayFlex')
+
+}
+closePopUp5.onclick = function () {
+    deliveryPopUp__mother.classList.remove('displayFlex')
+}
+
+
+try {
+    buyClickPopUp__close.onclick = function () {
+        buyClickPopUp__mother.classList.remove('displayFlex')
+
+    }
+    product__buy1click.onclick = function () {
+
+        buyClickPopUp__mother.classList.add('displayFlex')
+    }
+
+
+
+
+} catch (error) {
+
+}
+const furnitureToOrder__mother2 = document.querySelector('.furnitureToOrder__mother2')
+const furnitureOrder__close2 = document.querySelector('#furnitureOrder__close2')
+const individualPrice = document.querySelectorAll('.individualPrice')
+try {
+    individualPrice[0].onclick = function (params) {
+        furnitureToOrder__mother2.classList.add('displayFlex')
+    }
+    individualPrice[1].onclick = function (params) {
+        furnitureToOrder__mother2.classList.add('displayFlex')
+    }
+    furnitureOrder__close2.onclick = function (params) {
+        furnitureToOrder__mother2.classList.remove('displayFlex')
+
+    }
+
+} catch (error) {
+
+}
 // hoverIcon.forEach((e,i)=>{
 //     try {
 
@@ -528,30 +628,30 @@ try {
             e.classList.toggle('displayBlock')
         })
     })
-    
+
 } catch (error) {
-    
+
 }
 
 const descLi = document.querySelectorAll('.descriptionAndChar > ul li')
 const desc1 = document.querySelector('.description__part')
 const desc2 = document.querySelector('.complectation')
 const desc3 = document.querySelector('.reviewsPart')
-const descLi2=[...document.querySelectorAll('.furNameSwiper li')]
+const descLi2 = [...document.querySelectorAll('.furNameSwiper li')]
 
 const descs = [desc1, desc2, desc3]
 descLi.forEach((e, i) => {
     e.addEventListener('click', function () {
-        descLi.forEach((el,index) => {
+        descLi.forEach((el, index) => {
             el.classList.remove('fur-active')
             descs[index].classList.remove('displayFlex')
             descs[index].classList.remove('displayBlock')
         })
         e.classList.add('fur-active')
-        if (i==2) {
+        if (i == 2) {
             descs[i].classList.add('displayBlock')
-            
-        }else{
+
+        } else {
             descs[i].classList.add('displayFlex')
 
         }
@@ -560,33 +660,33 @@ descLi.forEach((e, i) => {
 
 descLi2.forEach((e, i) => {
     e.addEventListener('click', function () {
-        descLi2.forEach((el,index) => {
+        descLi2.forEach((el, index) => {
             el.classList.remove('fur-active')
             descs[index].classList.remove('displayFlex')
             descs[index].classList.remove('displayBlock')
         })
         e.classList.add('fur-active')
-        if (i==2) {
+        if (i == 2) {
             descs[i].classList.add('displayBlock')
-            
-        }else{
+
+        } else {
             descs[i].classList.add('displayFlex')
 
         }
     })
 })
 
- const description4__2= document.querySelector('#description4__2')
- const description4__1= document.querySelector('#description4__1')
- const description4= document.querySelector('#description4')
+const description4__2 = document.querySelector('#description4__2')
+const description4__1 = document.querySelector('#description4__1')
+const description4 = document.querySelector('#description4')
 try {
     description4__2.addEventListener('click', function () {
         description4__1.classList.toggle('rotate')
         // description4.map(e => {
-            description4.classList.toggle('displayBlock')
-            // })
-        })
-        
-    } catch (error) {
-        
-    }
+        description4.classList.toggle('displayBlock')
+        // })
+    })
+
+} catch (error) {
+
+}

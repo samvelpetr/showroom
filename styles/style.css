@@ -7,6 +7,12 @@
         list-style-type: none;
         color: #1E1E1E;
         background-repeat: no-repeat !important;
+        scroll-behavior: smooth;
+    }
+    body{
+    }
+    button {
+        cursor: pointer;
     }
 
     h2 {
@@ -225,8 +231,9 @@
 
     .slide__call {
         position: absolute;
-        right: 102px;
-        bottom: 29px;
+        right: 100px;
+        z-index: 1000;
+        bottom: 100px;
         cursor: pointer;
 
     }
@@ -1956,7 +1963,7 @@
     }
 
     .colectionProduct .product__photo {
-        background: url(/styles/photo/kub2.png);
+        background: url(./photo/kub2.png);
         background-size: cover;
         min-height: 310px;
     }
@@ -2003,7 +2010,9 @@
     .colectionProduct29 .product__photo {
         background: url(./photo/lobby.png);
     }
-
+    .colectionProduct3 .product__photo{
+        background: url(./photo/kub4.png);
+    }
     .colectionProduct30 .product__photo {
         background: url(./photo/lobby1.png);
         min-height: 405px;
@@ -2867,6 +2876,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         padding: 14px 0 40px;
     }
 
@@ -2886,6 +2896,10 @@
         align-items: center;
         gap: 12px;
         padding-bottom: 12px;
+    }
+
+    .deliveryOption3 h3 {
+        display: none;
     }
 
     .productSwiper {
@@ -2954,6 +2968,10 @@
 
     .rotate {
         transform: rotate(180deg);
+    }
+
+    .header__icon3 {
+        cursor: pointer;
     }
 
     .h3Complect {
@@ -3094,21 +3112,26 @@
     .swiper-slide .product__photo1 {
         width: 386px;
         min-height: 405px;
-        background: url(./photo/divan1.png) !important;
-
-        background-size: contain;
+        background-image: url(./photo/divan1.png) !important  ;
+        height: auto;
+        background-size: contain !important;
     }
 
     .swiper-slide .product__photo2 {
         width: 386px;
         min-height: 405px;
-        background: url(./photo/divan2.png) !important;
+        height: auto;
+        background-image: url(./photo/divan2.png) !important;
+        background-size: contain !important;
+
     }
 
     .swiper-slide .product__photo3 {
         width: 386px;
+        height: auto;
         min-height: 405px;
-        background: url(./photo/divan3.png) !important;
+        background-image: url(./photo/divan3.png) !important;
+        background-size: contain !important;
     }
 
     .salesHit__swiper2 .swiper-slide:hover {
@@ -3192,6 +3215,77 @@
     .reviewsPart,
     .description__part {
         display: none;
+    }
+
+    .buyClickPopUp__mother {
+        position: fixed !important;
+        /* display: flex !important; */
+    }
+
+    .furnitureToOrder__mother2 {
+        position: fixed !important;
+        /* display: flex !important; */
+    }
+
+    .buyClickPopUp {
+        background: white;
+        width: 840px;
+    }
+
+    .individualPrice {
+        cursor: pointer;
+    }
+
+    .buyClickPopUp__wrapper {
+        width: 645px;
+        margin: auto;
+        padding: 82px 0;
+    }
+
+    .buyClickPopUp__wrapper h2 {
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 157px;
+    }
+
+    .buyClickPopUp__product {
+        gap: 17px;
+        display: flex;
+        align-items: flex-start;
+        margin-top: 56px;
+        margin-bottom: 48px;
+    }
+
+    .buyClickPopUp__product p {
+        font-weight: 600;
+    }
+
+    .buyClickPopUp .product__price del {
+        align-self: flex-end;
+    }
+
+    .buyClickPopUp .product__name {
+        font-size: 24px;
+        font-weight: 600;
+        color: #575757;
+        line-height: 32px;
+    }
+
+    .buyClickPopUp #main p {
+        margin-left: 20px;
+    }
+
+    .buyClickPopUp button {
+        width: 100%;
+        background: #8CAFC5;
+        padding: 20px 0;
+        color: white;
+        font-size: 18px;
+        border: none;
+        margin-top: 30px;
+        font-weight: 600;
     }
 
     @media screen and (max-width:1730px) {
@@ -3573,7 +3667,9 @@
         display: block;
         margin: 46px auto 0;
     }
-
+    .delivery__conditions{
+        cursor: pointer;
+    }
 
 
     @media screen and (max-width:1470px) {
@@ -3903,7 +3999,7 @@
 
     .furnitureToOrder__mother {
         position: absolute;
-        z-index: 1000;
+        z-index: 10000000000000;
         background: rgba(0, 0, 0, 0.7);
         width: 100%;
         height: 105vh;
@@ -3922,7 +4018,7 @@
         position: absolute;
         overflow: hidden;
         background: rgba(0, 0, 0, 0.7);
-        z-index: 1000;
+        z-index: 10000000000000000;
         width: 100%;
         height: 165vh;
         display: none;
@@ -4109,16 +4205,30 @@
     }
 
     .deliveryPopUp__mother {
-        height: 160vh;
+        height: 100vh;
+        /* display: none; */
+        position: fixed;
+    }
 
-        display: none;
+    .deliveryPopUpBut {
+        cursor: pointer;
     }
 
     .deliveryPopUp {
         width: 1112px;
         background: white;
     }
-
+    #DocumentationSec h3{
+        padding-top: 32px;
+        padding-bottom: 10px;
+    }
+    #DocumentationSec a{
+        color: #02A2E5;
+    }
+    #DocumentationSec h2{
+        padding-bottom: 24px;
+        padding-top: 40px;
+    }
     .deliveryPopUp__wrapper {
         width: 1028px;
         margin: auto;
@@ -4146,16 +4256,18 @@
         padding: 24px 0;
     }
 
-    .td1{
+    .td1 {
         width: 223px !important;
         text-align: left !important;
         padding: 12px 0 !important;
         padding-left: 22px !important;
     }
-    .td2{
+
+    .td2 {
         padding: 12px 33px !important;
         font-size: 16px !important;
     }
+
     .deliveryPopUp__table table th {
         width: 201px;
         text-align: center;
@@ -4168,12 +4280,15 @@
         justify-content: flex-start;
         gap: 72px;
     }
-    .deliveryOption1 table{
+
+    .deliveryOption1 table {
         margin-bottom: 32px;
     }
-    .deliveryOption1 p{
+
+    .deliveryOption1 p {
         padding-bottom: 8px;
     }
+
     .credit__mother {
         display: none;
         position: fixed !important;
@@ -4181,58 +4296,77 @@
         padding-top: 440px;
         overflow-y: scroll;
     }
-    .deliveryOption2 ul{
+
+    .deliveryOption2 ul {
         margin-top: 12px;
         margin-bottom: 110px;
     }
-    .deliveryOption2 li{
+
+    .deliveryOption2 li {
         list-style: disc;
         margin-left: 30px;
     }
-    .deliveryOption2 p{
-        padding-top: 15px;
+
+    .deliveryOption2 p {
         line-height: 170%;
     }
 
-    .deliveryOption3__text li{
+    .deliveryOption3__text li {
         list-style: disc;
         font-size: 14px;
         margin-left: 30px;
     }
-    .deliveryOption3 >p{
-        padding: 33px 0;
+
+    .deliveryOption3>p {
+        padding: 0 0 33px;
     }
-    .deliveryLocation{
+
+    .deliveryLocation {
         width: 512px;
     }
-    .deliveryOption3__block{
+
+    .deliveryOption3__block {
         display: flex;
         justify-content: space-between;
     }
-    .deliveryOption3__text{
+
+    .deliveryOption3__text {
         width: 458px;
     }
+
+    .deliveryOption1,
+    .deliveryOption2,
+    .deliveryOption3 {
+        display: none;
+    }
+
     .paymentPopUp__mother {
         position: fixed !important;
     }
-    .DoYouHaveQuestion{
+
+    .DoYouHaveQuestion {
         width: 100%;
         padding: 28px 42px;
         align-items: center;
         border: 1px solid #818181;
-        display: flex;justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
     }
-    .DoYouHaveQuestion button{
+
+    .DoYouHaveQuestion button {
         padding: 10px 0;
-        width: 154px;font-size: 18px;
+        width: 154px;
+        font-size: 18px;
         color: white;
         border: none;
         background: #8CAFC5;
     }
-    .DoYouHaveQuestion h3{
+
+    .DoYouHaveQuestion h3 {
         font-size: 28px;
 
     }
+
     .creditPopUpBut {
         cursor: pointer;
     }
@@ -4264,8 +4398,16 @@
         gap: 12px;
     }
 
+    .furnitureToOrder2 h2 {
+        gap: 50px;
+    }
+
     .creditPopUp img {
         margin: 24px 0 12px;
+    }
+
+    .furnitureToOrder2 textarea {
+        margin-bottom: 30px;
     }
 
     .creditPopUp span {
@@ -4348,6 +4490,177 @@
         display: none;
     }
 
+    .deliveryOption1__mobile {
+        display: none;
+    }
+
+    #furnitureOrder__close2 {
+        cursor: pointer;
+    }
+
+    .furnitureToOrder__mother button {
+        cursor: pointer;
+    }
+    .miniPopUp1{
+        width: 412px;
+        display: flex;flex-direction: column;
+        align-items: center;
+        background: white;
+        text-align: center;
+        gap: 16px;
+        padding: 42px;
+
+    }
+    .miniPopUp1 h3{
+        font-size: 28px;
+        font-weight: 600;
+        padding-top: 16px;
+    }
+
+    .miniPopUp1 p{
+        color: #575757;
+        padding-bottom: 16px;
+        font-size: 18px;
+    }
+    .miniPopUp1 button{
+        border: none;
+        background: #8CAFC5;
+        padding: 10px 0;
+        width: 154px;
+        color: white;
+        font-size: 18px;
+    }
+    .miniPopUp2{
+        width: 496px;
+        background: white;
+        padding: 42px;
+    }
+    .miniPopUp2 p{
+        text-align: center;
+        color: #575757;
+        padding-top: 36px;
+    }
+    .miniPopUp2 button{
+        width: 236px;
+        border: none;
+        background: #8CAFC5;
+        color: white;
+        padding: 10px 0;
+        margin: auto;
+        display: block;
+        margin-top: 27px;
+        font-size: 18px;
+    }
+    .miniPopUp3{
+        padding-bottom: 80px;
+    }
+    .writeReview__wrapper label{
+        cursor: pointer;
+    }
+    .writeReviewPopUp1{
+        width: 610px;
+        border: 1px solid black;
+    }
+    .write__review__main{
+        width: 526px;
+        margin: auto;
+        padding: 42px 0;
+    }
+    .writeReview__name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .writeReview__name h3{
+        font-size: 28px;
+    }
+
+
+    .writeReview__productName{
+        padding: 20px 0;
+        font-size: 16px;
+    }
+
+    .writeReview__productName span{
+        color: #575757;
+    }
+    .writeReview__wrapper form{
+        display: flex;
+        gap: 20px;
+        /* align-items: flex-start; */
+    }
+    .writeReview__input{
+        width: 344px;
+        outline: none;
+        padding: 14px;
+        border: 1px solid #D1CCCC;
+        margin: 20px 0;
+    }
+    .writeReview__wrapper textarea{
+        max-width: 344px;
+        min-width: 344px;
+        max-height: 261px;
+        outline: none;
+        border: 1px solid #D1CCCC;
+        padding: 14px;
+        margin-bottom: 20px;
+        min-height: 261px;
+    }
+
+    .fileInp{
+        width: 162px;
+        border: 1px solid #D1CCCC;
+        display: flex;
+        margin-top: 20px;
+        height: 329px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fileInp p{
+        padding: 4px 0;
+    }
+    .fileInp span{
+        color: #575757;
+    }
+
+    .yourReview{
+        display: flex;
+        align-items: center;gap: 12px;
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+
+    .writeReview__wrapper button{
+        width: 426px;
+        border: none;
+        background: #8CAFC5;
+        color: white;
+        font-weight: 600;
+        padding: 20px 0;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+    }
+    .writeReviewPopUp2{
+        width: 469px;
+    }
+    .writeReviewPopUp2 .write__review__main{
+        width: 385px;
+    }
+    .writeReviewPopUp2 button{
+        width: 100%;
+    }
+    .writeReviewPopUp2 input {
+        width: 100%;
+    }
+    .writeReviewPopUp2 textarea{
+        max-width: 100%;
+        min-width: 100%;
+        width: 100% !important;
+    }
     @media screen and (max-width:1100px) {
         .container {
             width: 719px;
@@ -4355,6 +4668,10 @@
 
         .productActive {
             display: none;
+        }
+
+        .furnitureToOrder2 h2 {
+            gap: 0 !important;
         }
 
         .activeCollectionNavMobile {
@@ -4663,8 +4980,8 @@
         .mainslider__slide {
 
             background: url(./photo/banner_mobile.png);
-            background-size: cover;
-            height: 332px !important;
+            background-size: 100%;
+            height: 274px !important;
         }
 
         .slide__text {
@@ -4682,7 +4999,7 @@
         }
 
         .slide__text h3 {
-            font-size: 24px;
+            font-size: 16px;
         }
 
         .slide__text h2 {
@@ -5024,13 +5341,24 @@
         }
 
         .slide__text h2 {
+            text-align: left;
             font-size: 64px !important;
             font-weight: 600 !important;
         }
 
+        .slide__text {
+            padding-left: 50px;
+        }
+
+        .slide__text h3 {
+            transform: translateX(-14px);
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
         .slide__call {
-            right: 11px;
-            bottom: 12px;
+            right: 35px;
+            bottom: 65px;
             width: 28px;
         }
 
@@ -5209,7 +5537,7 @@
         }
 
         .catalog__360 {
-            display: none !important;
+            /* display: none !important; */
         }
 
         .creditPopUp {
@@ -5269,14 +5597,161 @@
         .creditPopUp__block1 h4 svg {
             display: block;
         }
-    }
 
+        .deliveryPopUp {
+            width: 100%;
+
+        }
+
+        .deliveryPopUp__wrapper {
+            width: 328px;
+        }
+
+        .popUp__name h2 {
+            font-size: 20px;
+        }
+
+        .closePopUp svg {
+            width: 24px;
+        }
+
+        .deliveryNames {
+            display: none;
+        }
+
+        .deliveryPopUp__table {
+            display: none;
+        }
+
+        .deliveryOption1__mobile {
+            display: block;
+        }
+
+        .deliveryOption1__mobile h3 {
+            padding: 29px 0 16px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .table__mobile1 {
+            border: 1px solid #D1CCCC;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .table__mobile2 {
+            display: flex;
+
+        }
+
+        .table__mobile2 div {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #D1CCCC;
+        }
+
+        .deliveryOption1__mobile>div {
+            margin-bottom: 8px;
+        }
+
+        .deliveryOption1__mobile>ul li {
+            list-style: disc;
+            font-size: 14px;
+            margin-left: 30px;
+        }
+
+        .deliveryOption1__mobile>ul {
+            padding: 16px 0 32px;
+            line-height: 20px;
+        }
+
+        .deliveryOption2 {
+            display: block;
+        }
+
+        .deliveryPopUp__mother {
+            position: absolute;
+            height: 275vh;
+
+        }
+
+        .deliveryOption2 p {
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        .deliveryOption2 li {
+            color: #575757;
+        }
+
+        .deliveryOption3 h3 {
+            display: block;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .deliveryOption3 {
+            display: block;
+        }
+
+        .deliveryOption2 ul {
+            margin-bottom: 32px;
+        }
+
+        .deliveryOption3>p {
+            font-size: 14px;
+            padding-top: 16px;
+            padding-bottom: 12px;
+        }
+
+        .deliveryOption3__block {
+            flex-direction: column;
+        }
+
+        .deliveryLocation {
+            width: 100%;
+            margin-bottom: 16px;
+            height: 221px;
+        }
+
+        .deliveryOption3__text {
+            width: 100%;
+        }
+
+        .DoYouHaveQuestion {
+            margin-top: 32px;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 16px 12px;
+            gap: 16px;
+        }
+
+        .DoYouHaveQuestion h3 {
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .DoYouHaveQuestion p {
+            font-size: 14px;
+            padding-top: 12px;
+        }
+    }
+    #DocumentationSec .activeCollectionNavHome a{
+        color: #1E1E1E;
+    }
 
     @media screen and (max-width:725px) {
         .container {
             width: 329px;
         }
+        .paymentPopUp__mother{
+            position: absolute !important;
 
+        }
         .product__wrapper h4 {
             font-size: 16px;
             padding-top: 20px;
@@ -5526,9 +6001,9 @@
         }
 
         .mobile__phones {
-            align-items: center;
+            align-items: flex-start;
         }
-
+        
         .header__block1_mobile .container {
             align-items: center;
         }
@@ -5845,6 +6320,7 @@
         }
 
         .ideaElement4 {
+            margin: 20px 0 40px;
             height: 174px;
         }
 
@@ -6057,7 +6533,7 @@
             transform: translate(0, 0);
             position: absolute;
             right: 20px;
-            bottom: -35px;
+            bottom: -40px;
         }
 
         .catalog__360 .header__input input {
@@ -6536,7 +7012,7 @@
             margin-bottom: 15px;
         }
 
-        .product__addedToCart {
+        .basketPopUp__mother .product__addedToCart {
             width: 144px;
             background: #8CAFC5;
             font-size: 18px;
@@ -6590,7 +7066,7 @@
         }
 
         .forPartners__mother {
-            height: 200vh;
+            height: 220vh;
         }
 
         .forPartners {
@@ -6620,6 +7096,99 @@
 
         .forPartners__name svg {
             width: 24px;
+        }
+
+        .modernCollection__pagination .swiper-pag {
+            left: -57px;
+            bottom: -6px;
+        }
+
+        .buyClickPopUp__wrapper {
+            width: 306px;
+            padding: 24px 0;
+        }
+
+        .buyClickPopUp__wrapper h2 {
+            gap: 50px;
+        }
+
+        .buyClickPopUp {
+            width: 100%;
+        }
+
+        .buyClickPopUp__product {
+            flex-direction: column;
+        }
+
+        .buyClickPopUp__product img {
+            width: 288px;
+        }
+
+        .buyClickPopUp__product .product__name {
+            font-size: 16px;
+        }
+
+        .buyClickPopUp .furnitureOrder__close svg {
+            width: 24px;
+        }
+
+        .furnitureToOrder__mother {
+            height: 100vh;
+        }
+
+        .miniPopUp1{
+            width: 288px;
+            padding: 20px 16px;
+        }
+        .miniPopUp1 h3{
+            font-size: 20px;
+        }
+        .miniPopUp1 p{
+            font-size: 14px;
+        }
+        .miniPopUp2{
+            width: 360px;
+            padding: 28px;
+        }
+        .writeReviewPopUp1{
+            width: 100%;
+        }
+        .write__review__main{
+            width: 288px !important ;
+        }
+        .writeReview__input{
+            width: 288px !important;
+        }
+        .writeReview__wrapper textarea{
+            min-width: 288px;
+            max-width: 288px;
+            width: 288px;
+        }
+        .writeReview__wrapper form{
+            flex-direction: column;
+        }
+        .fileInp{
+            width: 100%;
+            padding: 20px 0;
+            align-items: center;
+            height: auto;
+            flex-direction: row;
+            gap: 16px;
+        }
+        .writeReview__wrapper button{
+            width: 288px;
+            font-size: 16px;
+        }
+        .fileInpDiv{
+            font-size: 14px;
+            text-align: left;
+            width: 188px;
+        }
+    }
+
+    @media screen and (max-width:550px) {
+        .mainslider__slide {
+            height: auto !important;
         }
     }
 

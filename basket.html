@@ -23,8 +23,8 @@
 
                 <ul>
                     <li><a href="contacts.html">Контакты</a></li>
-                    <li><a href="">Партнёрам</a></li>
-                    <li><a href="">Кредит</a></li>
+                    <li><a class="forPartnersBut">Партнёрам</a></li>
+                    <li><a class="creditPopUpBut">Кредит</a></li>
                     <li><a href="factory.html">О фабрике</a></li>
                 </ul>
             </div>
@@ -34,8 +34,8 @@
                 <div class="burgerMenu1">
                     <ul>
                         <li><a href="">Контакты</a></li>
-                        <li><a href="">Партнерам</a></li>
-                        <li><a href="">Кредит</a></li>
+                        <li><a class="forPartnersBut">Партнерам</a></li>
+                        <li><a class="creditPopUpBut">Кредит</a></li>
                         <li><a href="">О фабрике</a></li>
                     </ul>
                 </div>
@@ -112,10 +112,17 @@
                         <p>+7 499 472-09-74</p>
                         <span> Заказать обратный звонок</span>
                     </div>
-                    <img class="header__icon2" src="./styles/photo/favinactive.png" alt="">
-                    <a href="basket.html">
-                        <img src="./styles/photo/bascet.png" alt="">
-                    </a>
+                    <div class="header__icon2">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                            <path d="M16.9987 30.2458L14.9445 28.3758C7.6487 21.76 2.83203 17.3825 2.83203 12.0417C2.83203 7.66417 6.26036 4.25 10.6237 4.25C13.0887 4.25 15.4545 5.3975 16.9987 7.19667C18.5429 5.3975 20.9087 4.25 23.3737 4.25C27.737 4.25 31.1654 7.66417 31.1654 12.0417C31.1654 17.3825 26.3487 21.76 19.0529 28.3758L16.9987 30.2458Z" fill="#8CAFC5"/>
+                        </svg>
+                    </div>
+                    <a class="header__icon3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                            <path d="M10.916 32.1673C10.1368 32.1673 9.47007 31.8901 8.91568 31.3357C8.36035 30.7804 8.08268 30.1132 8.08268 29.334C8.08268 28.5548 8.36035 27.8876 8.91568 27.3322C9.47007 26.7778 10.1368 26.5007 10.916 26.5007C11.6952 26.5007 12.362 26.7778 12.9163 27.3322C13.4717 27.8876 13.7493 28.5548 13.7493 29.334C13.7493 30.1132 13.4717 30.7804 12.9163 31.3357C12.362 31.8901 11.6952 32.1673 10.916 32.1673ZM25.0827 32.1673C24.3035 32.1673 23.6367 31.8901 23.0823 31.3357C22.527 30.7804 22.2493 30.1132 22.2493 29.334C22.2493 28.5548 22.527 27.8876 23.0823 27.3322C23.6367 26.7778 24.3035 26.5007 25.0827 26.5007C25.8618 26.5007 26.5291 26.7778 27.0844 27.3322C27.6388 27.8876 27.916 28.5548 27.916 29.334C27.916 30.1132 27.6388 30.7804 27.0844 31.3357C26.5291 31.8901 25.8618 32.1673 25.0827 32.1673ZM9.71185 9.50065L13.1118 16.584H23.0285L26.9243 9.50065H9.71185ZM8.36601 6.66732H29.2618C29.8049 6.66732 30.2181 6.9091 30.5014 7.39265C30.7848 7.87715 30.7966 8.36732 30.5368 8.86315L25.5077 17.9298C25.248 18.402 24.8995 18.768 24.4622 19.0277C24.0259 19.2875 23.548 19.4173 23.0285 19.4173H12.4743L10.916 22.2507H27.916V25.084H10.916C9.85352 25.084 9.05074 24.6174 8.50768 23.6843C7.96463 22.7522 7.94102 21.8257 8.43685 20.9048L10.3493 17.434L5.24935 6.66732H2.41602V3.83398H7.02018L8.36601 6.66732Z" fill="#1E1E1E"/>
+                            <circle cx="18" cy="7" r="6" fill="#8CAFC5"/>
+                          </svg>                    </a>
                 </div>
             </div>
         </div>
@@ -124,7 +131,7 @@
                 <div class="header__menu">
                     <ul>
                         <li id="hotels" class="for__mobile__menu">
-                            <a href=""> Гостиные</a>
+                            <a href="catalogSeeALl.html"> Гостиные</a>
                             <div class="hotel__hover">
                                 <div class="container">
                                     <div class="hotel__hover__wrapper">
@@ -349,7 +356,8 @@
                         </li>
                         <li class="catalog__mobile">КАТАЛОГ</li>
                         <li><a href="sales.html">Распродажа <span class="header__menu-span1">%</span> </a></li>
-                        <li><a href="">Мебель на заказ <span class="header__menu-span2">NEW</span></a></li>
+                        <li><a class="furnitureToOrderBut">Мебель на заказ <span
+                                    class="header__menu-span2">NEW</span></a></li>
 
                     </ul>
 
@@ -384,7 +392,7 @@
                                 </div>
 
                                 <div class="catalog__open__seeAll">
-                                    <a href="">
+                                    <a href="catalogSeeALl.html">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                             viewBox="0 0 36 36" fill="none">
@@ -429,7 +437,7 @@
                                 </div>
 
                                 <div class="catalog__open__seeAll">
-                                    <a href="">
+                                    <a href="catalogSeeALl.html">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                             viewBox="0 0 36 36" fill="none">
@@ -464,7 +472,7 @@
                                 </div>
 
                                 <div class="catalog__open__seeAll">
-                                    <a href="">
+                                    <a href="catalogSeeALl.html">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                             viewBox="0 0 36 36" fill="none">
@@ -503,7 +511,7 @@
                                 </div>
 
                                 <div class="catalog__open__seeAll">
-                                    <a href="">
+                                    <a href="catalogSeeALl.html">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                             viewBox="0 0 36 36" fill="none">
@@ -539,7 +547,7 @@
                                 </div>
 
                                 <div class="catalog__open__seeAll">
-                                    <a href="">
+                                    <a href="catalogSeeALl.html">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
                                             viewBox="0 0 36 36" fill="none">
@@ -679,10 +687,11 @@
                             </div>
                             <a href="showroom.html">Шоу-рум</a>
                         </li>
-                        <li><a>МЕБЕЛЬ НА ЗАКАЗ <span class="header__menu-span2">NEW</span></a></li>
+                        <li class="furnitureToOrderBut"><a>МЕБЕЛЬ НА ЗАКАЗ <span
+                                    class="header__menu-span2">NEW</span></a></li>
                         <li><a href="contacts.html">Контакты</a></li>
-                        <li><a>Партнерам</a></li>
-                        <li><a>Кредит</a></li>
+                        <li><a class="forPartnersBut">Партнерам</a></li>
+                        <li><a class="creditPopUpBut">Кредит</a></li>
                         <li><a href="factory.html">О фабрике</a></li>
                     </ul>
                     <div>
@@ -699,7 +708,8 @@
                         <li><a>МЯГКАЯ МЕБЕЛЬ</a></li>
                         <li><a>Малые формы</a></li>
                         <li><a href="sales.html">Распродажа <span class="header__menu-span1">%</span></a></li>
-                        <li><a>МЕБЕЛЬ НА ЗАКАЗ <span class="header__menu-span2">NEW</span></a></li>
+                        <li class="furnitureToOrderBut"><a>МЕБЕЛЬ НА ЗАКАЗ <span
+                                    class="header__menu-span2">NEW</span></a></li>
                     </ul>
                     <img src="./styles/photo/mobilecatalog.png" alt="">
                 </div>
@@ -713,7 +723,7 @@
                     </div>
 
                     <div class="catalog__open__seeAll">
-                        <a href="">
+                        <a href="catalogSeeALl.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                 fill="none">
@@ -756,7 +766,7 @@
                     </div>
 
                     <div class="catalog__open__seeAll">
-                        <a href="">
+                        <a href="catalogSeeALl.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                 fill="none">
@@ -789,7 +799,7 @@
                     </div>
 
                     <div class="catalog__open__seeAll">
-                        <a href="">
+                        <a href="catalogSeeALl.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                 fill="none">
@@ -826,7 +836,7 @@
                     </div>
 
                     <div class="catalog__open__seeAll">
-                        <a href="">
+                        <a href="catalogSeeALl.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                 fill="none">
@@ -860,7 +870,7 @@
                     </div>
 
                     <div class="catalog__open__seeAll">
-                        <a href="">
+                        <a href="catalogSeeALl.html">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                 fill="none">
@@ -889,6 +899,656 @@
             </div>
         </div>
     </header>
+    <div class="favoritePopUp__mother">
+        <div class="favoritePopUp__wrapper">
+            <div class="popUp__name">
+                <h2>Избранное</h2>
+                <div class="closePopUp closePopUp1"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                        viewBox="0 0 46 46" fill="none">
+                        <path
+                            d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                            fill="#575757" />
+                    </svg></div>
+            </div>
+
+            <div class="favorite__element">
+                <div class="favorite__img">
+                    <img src="./styles/photo/favorite1.png" alt="">
+                </div>
+                <div class="favorite__info">
+                    <div class="product__name">КУБА <span> двухдверный шкаф-витрина с ящиками</span></div>
+
+                    <div class="product__price">
+                        <p>19 500 ₽</p>
+                        <del>19 500 ₽</del>
+                    </div>
+                    <button class="product__addToCart">Добавить в корзину</button>
+                </div>
+                <div class="favoriteDel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <path
+                            d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                            fill="#575757" />
+                    </svg>
+                </div>
+            </div>
+            <div class="favorite__element">
+                <div class="favorite__img">
+                    <img src="./styles/photo/favorite2.png" alt="">
+                </div>
+                <div class="favorite__info">
+                    <div class="product__name">КУБА <span>Платяной распашной шкаф</span></div>
+
+                    <div class="product__price">
+                        <p>14 770 ₽</p>
+                        <del>17 700 ₽</del>
+                    </div>
+                    <button class="product__addToCart">Добавить в корзину</button>
+                </div>
+                <div class="favoriteDel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <path
+                            d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                            fill="#575757" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="favoritePopUp__mother basketPopUp__mother">
+        <div class="favoritePopUp__wrapper">
+            <div class="popUp__name">
+                <h2>В корзине</h2>
+                <div class="closePopUp closePopUp2"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                        viewBox="0 0 46 46" fill="none">
+                        <path
+                            d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                            fill="#575757" />
+                    </svg></div>
+            </div>
+
+            <div class="favorite__element">
+                <div class="favorite__img">
+                    <img src="./styles/photo/favorite1.png" alt="">
+                </div>
+                <div class="favorite__info">
+                    <div class="product__name">КУБА <span> двухдверный шкаф-витрина с ящиками</span></div>
+
+                    <div class="product__price">
+                        <p>19 500 ₽</p>
+                        <del>19 500 ₽</del>
+                    </div>
+                    <div class="product__addedInCart">
+
+                        <button class="product__addedToCart">В корзине </button>
+                        <div class="productCount">
+                            <button class="productCount_minus">-</button>
+                            <p id="count">1</p>
+                            <button class="productCount_plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favoriteDel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <path
+                            d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                            fill="#575757" />
+                    </svg>
+                </div>
+            </div>
+            <div class="favorite__element">
+                <div class="favorite__img">
+                    <img src="./styles/photo/favorite2.png" alt="">
+                </div>
+                <div class="favorite__info">
+                    <div class="product__name">КУБА <span>Платяной распашной шкаф</span></div>
+
+                    <div class="product__price">
+                        <p>14 770 ₽</p>
+                        <del>17 700 ₽</del>
+                    </div>
+                    <div class="product__addedInCart">
+
+                        <button class="product__addedToCart">В корзине </button>
+                        <div class="productCount">
+                            <button class="productCount_minus">-</button>
+                            <p id="count">1</p>
+                            <button class="productCount_plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="favoriteDel">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <path
+                            d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                            fill="#575757" />
+                    </svg>
+                </div>
+
+
+            </div>
+            <div class="basketPrice">
+                <h3>Итого :</h3>
+                <div class="product__price">
+                    <p>34 270 ₽</p>
+                    <del>17 700 ₽</del>
+                </div>
+
+            </div>
+            <button class="basket__button1">Продолжить покупки</button>
+            <button class="basket__button2">Оформить заказ</button>
+
+        </div>
+    </div>
+    <div class="furnitureToOrder__mother">
+
+        <div class="furnitureToOrder">
+            <div class="furnitureToOrder__wrapper ">
+                <div class="furnitureToOrder__imgs">
+                    <img width="215px" src="./styles/photo/flower1.png" id="flower2_1" alt="">
+                    <img width="117px" src="./styles/photo/flower2.png" id="flower2_2" alt="">
+                </div>
+                <h2>Оставить заявку <img id="furnitureOrder__close" src="./styles/photo/close.png" alt=""></h2>
+                <form action="">
+                    <label for="input__name">Имя</label>
+                    <input id="input__name" class="inputs" type="text" placeholder="Ваше имя">
+                    <label for="input__phone">Телефон</label>
+                    <input id="input__phone" type="text" class="inputs" placeholder="+7 999 999-99-99">
+                    <label for="input__email">Email</label>
+                    <input id="input__email" type="text" class="inputs" placeholder="Email">
+
+                    <label for="textarea">Комментарий</label>
+
+                    <textarea name="textarea" rows="10"
+                        placeholder="Укажите вид мебели, желаемые размер, цвет"></textarea>
+
+                    <div>
+                        <label for="files" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                                viewBox="0 0 34 34" fill="none">
+                                <path
+                                    d="M16.2917 31.1663C14.1194 31.1663 12.2778 30.4108 10.7667 28.8997C9.25556 27.3886 8.5 25.5469 8.5 23.3747V8.49967C8.5 6.94134 9.05486 5.60731 10.1646 4.49759C11.2743 3.38787 12.6083 2.83301 14.1667 2.83301C15.725 2.83301 17.059 3.38787 18.1687 4.49759C19.2785 5.60731 19.8333 6.94134 19.8333 8.49967V21.958C19.8333 22.9497 19.491 23.7879 18.8062 24.4726C18.1215 25.1573 17.2833 25.4997 16.2917 25.4997C15.3 25.4997 14.4618 25.1573 13.7771 24.4726C13.0924 23.7879 12.75 22.9497 12.75 21.958V8.49967H14.875V21.958C14.875 22.3594 15.011 22.6961 15.283 22.9681C15.555 23.2401 15.8912 23.3756 16.2917 23.3747C16.6931 23.3747 17.0297 23.2387 17.3018 22.9667C17.5738 22.6947 17.7093 22.3585 17.7083 21.958V8.49967C17.7083 7.50801 17.366 6.66981 16.6812 5.98509C15.9965 5.30037 15.1583 4.95801 14.1667 4.95801C13.175 4.95801 12.3368 5.30037 11.6521 5.98509C10.9674 6.66981 10.625 7.50801 10.625 8.49967V23.3747C10.625 24.933 11.1799 26.267 12.2896 27.3768C13.3993 28.4865 14.7333 29.0413 16.2917 29.0413C17.85 29.0413 19.184 28.4865 20.2937 27.3768C21.4035 26.267 21.9583 24.933 21.9583 23.3747V8.49967H24.0833V23.3747C24.0833 25.5469 23.3278 27.3886 21.8167 28.8997C20.3056 30.4108 18.4639 31.1663 16.2917 31.1663Z"
+                                    fill="#8CAFC5" />
+                            </svg> Загрузить файлы</label>
+                        <input id="files" style="visibility:hidden;" type="file">
+                    </div>
+
+                    <label id="main">
+                        <input type="checkbox">
+                        <span class="geekmark"></span>
+                        <p>
+                            Отправляя персональные данные из данной формы, я даю согласие на обработку своих
+                            персональных данных
+
+                        </p>
+                    </label>
+                    <button>Отправить</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="forPartners__mother">
+        <div class="forPartners">
+            <div class="forPartners__name">
+                <h2>Партнёрам</h2>
+                <svg id="forPartners__close" xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                    viewBox="0 0 46 46" fill="none">
+                    <path
+                        d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                        fill="#575757" />
+                </svg>
+            </div>
+            <p class="forPartners__text1">Одной из главных целей фабрики Принцесса Мелания это стремление предоставить
+                своим клиентам максимально широкий и качественный ассортимент. Мы всегда открыты к новому сотрудничеству
+                с фабриками-производителями, оптовыми и корпоративными клиентами, интернет-магазинами и гипермаркетами,
+                дизайнерами и дизайн студиями</p>
+            <h3>Оптовым клиентам и Дилерам</h3>
+            <p class="forPartners__text2">Наша фабрика осуществляет реализацию товаров не только в розницу, но и оптом.
+                Сотрудничая с нами, вы никогда не столкнётесь с проблемой поиска и оптовой закупки качественной
+                продукции. Мы готовы предложить своим оптовым клиентам и дилерам:</p>
+            <ul>
+                <li>Широкий ассортимент продукции</li>
+                <li>Не снижаемый остаток</li>
+                <li>Отгрузку с одного склада</li>
+                <li>Собственный автопарк</li>
+                <li>Рекламационный отдел</li>
+                <li>Приятные цены</li>
+                <li>Гибкую систему скидок и бонусов</li>
+                <li>Информационную поддержку</li>
+            </ul>
+            <h3>Архитектурным бюро и Дизайнерам</h3>
+            <p class="forPartners__text2">Вы создаёте красивые и неповторимые интерьеры для своих клиентов,
+                тогда мы приглашаем вас стать нашими друзьями и предложим взаимовыгодные условия сотрудничества!</p>
+
+            <form action="">
+                <h3>Заявка для сотрудничества</h3>
+                <label for="input__name">Имя</label>
+                <input id="input__name" class="inputs" type="text" placeholder="Ваше имя">
+                <label for="input__phone">Телефон</label>
+                <input id="input__phone" type="text" class="inputs" placeholder="+7 999 999-99-99">
+                <label for="input__email">Email</label>
+                <input id="input__email" type="text" class="inputs" placeholder="Email">
+
+                <label for="textarea">Комментарий</label>
+
+                <textarea name="textarea" rows="10"
+                    placeholder="Укажите кто вы дилер/дизайнер, хотите получить оптовый прайс или узнать условия сотрудничества"></textarea>
+
+
+                <label id="main">
+                    <input type="checkbox">
+                    <span class="geekmark"></span>
+                    <p>
+                        Отправляя персональные данные из данной формы, я даю согласие на обработку своих
+                        персональных данных
+
+                    </p>
+                </label>
+                <button>Отправить заявку</button>
+            </form>
+            <div class="forPartners__img">
+                <img src="./styles/photo/flower2.png" id="flower1_2" alt="">
+                <img src="./styles/photo/flower1.png" id="flower1_1" alt="">
+                <img src="./styles/photo/flower3.png" id="flower1_3" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="deliveryPopUp__mother furnitureToOrder__mother">
+        <div class="deliveryPopUp">
+            <div class="deliveryPopUp__wrapper">
+                <div class="popUp__name">
+                    <h2>Доставка</h2>
+                    <div class="closePopUp closePopUp5"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                            viewBox="0 0 46 46" fill="none">
+                            <path
+                                d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                                fill="#575757" />
+                        </svg></div>
+                </div>
+                <span>Мы осуществляем доставку по Москве и Московской области. Также, в случае необходимости, вы можете
+                    забрать свой заказ в пункте самовывоза. При заказе мебели в регионы мы обеспечиваем доставку груза
+                    до терминала транспортной компании</span>
+                <ul class="deliveryNames">
+                    <li class="fur1 fur-active">МОСКВА и МОСКОВСКАЯ ОБЛАСТЬ <div></div>
+                    </li>
+                    <li class="fur2">по России и СНГ <div></div>
+                    </li>
+                    <li class="fur3">Самовывоз <div></div>
+                    </li>
+
+                </ul>
+                <div class="deliveryOption1 displayBlock">
+
+                    <div class="deliveryPopUp__table">
+                        <table>
+                            <tr>
+                                <th class="td1"></th>
+                                <th>Доставка</th>
+                                <th>подъем на лифте</th>
+                                <th>Ручной подъем</th>
+                                <th>Сборка</th>
+                            </tr>
+                            <tr>
+                                <td class="td1">Москва 
+                                    в пределах МКАД</td>
+                                <td>Бесплатно</td>
+                                <td>Бесплатно</td>
+                                <td>от 150 ₽ / этаж</td>
+                                <td class="td2">10%
+                                    не менее 1 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Московская область
+                                    за МКАД до 50 км</td>
+                                <td>Бесплатно</td>
+                                <td>Бесплатно</td>
+                                <td>от 150 ₽ / этаж</td>
+                                <td class="td2">10% + 20 ₽ / км
+                                    не менее 1 000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="td1">Московская область
+                                    за МКАД до 300 км</td>
+                                <td>30 ₽ / км</td>
+                                <td>Бесплатно</td>
+                                <td>от 150 ₽ / этаж</td>
+                                <td class="td2">10% + 20 ₽ / км
+                                    не менее 1 000 ₽</td>
+                            </tr>
+                        </table>
+                        <p>Товар передаётся в доставку через 1–3 дня после оформления заказа</p>
+                        <p>Доставка осуществляется с 9:00 до 23:00</p>
+                        <p>За 2 часа водитель информирует Вас о времени прибытия на адрес</p>
+                    </div>
+                    <div class="deliveryOption1__mobile">
+                        <h3>Москва и Московская область</h3>
+                        <div>
+                            <div class="table__mobile1">Доставка по Москве в пределах МКАД 
+                                Бесплатно</div>
+                                <div class="table__mobile2">
+                                    <div>
+                                        Подъем на лифте Бесплатно
+                                    </div>
+                                    <div>Ручной подъем
+                                        от 150 ₽ / этаж</div>
+                                </div>
+                                <div class="table__mobile1">Сборка  <br>
+                                    10%, но не менее 1 000 ₽</div>
+                        </div>
+
+                        <div>
+                            <div class="table__mobile1">Доставка Московская обл. за МКАД до 50 км 
+                                Бесплатно</div>
+                                <div class="table__mobile2">
+                                    <div>
+                                        Подъем на лифте Бесплатно
+                                    </div>
+                                    <div>Ручной подъем
+                                        от 150 ₽ / этаж</div>
+                                </div>
+                                <div class="table__mobile1">Сборка <br>
+                                10% + 20 ₽ / км, но не менее 1 000 ₽</div>
+                        </div>
+                        <div>
+                            <div class="table__mobile1">Доставка Московская обл. за МКАД до 300 км 
+                                30 ₽ / км</div>
+                                <div class="table__mobile2">
+                                    <div>
+                                        Подъем на лифте Бесплатно
+                                    </div>
+                                    <div>Ручной подъем
+                                        от 150 ₽ / этаж</div>
+                                </div>
+                                <div class="table__mobile1">Сборка <br>
+                                10% + 20 ₽ / км, но не менее 1 000 ₽</div>
+                        </div>
+                        <ul>
+                            <li>Товар передается в доставку через 1–3 дня после оформления заказа </li>
+                            <li>Доставка осуществляется с 9:00 до 23:00</li>
+                            <li>За 2 часа водитель информирует вас о времени прибытия на адреса</li>
+                        </ul>
+                        <h3>по России и СНГ</h3>
+                    </div>
+                </div>
+                <div class="deliveryOption2">
+                    <p>Мебель можно заказать в другие города России.</p>
+                     
+                    <p>Доставка мебели в регионы России и страны СНГ осуществляется через Транспортные компании при условии 100% оплаты.</p>
+                    <p>Доставка осуществляется «до двери» по указанному вами адресу через ТК или до терминала транспортной компании в вашем городе. Доставка происходит различными транспортными компаниями, работающими в Вашем регионе. «Деловые линии», «Грузовозофф», «ПЭК», «ЖелДорЭкспедиция», «DPD», также мы можем отправить ваш груз, другими транспортными компаниями на ваш выбор.</p>
+                    <p>Стоимость и сроки доставки зависят от веса и габаритов изделия, расстояния от пункта назначения до места загрузки ТК. Наш менеджер поможет с расчётом стоимости, предложит оптимальный вариант и поможет оформить заказ на доставку.</p>
+                    <ul>
+                        <li>Доставка до терминала транспортных компаний в городе Москва — Бесплатно!</li>
+                        <li>Доставка до терминала транспортных компаний в городе Санкт-петербург — Бесплатно!</li>
+                        <li>Доставка до пункта выдачи заказов (ПВЗ) в регионах России — Бесплатно! (при стоимость заказа: от 100.000 руб.)</li>
+                    </ul>
+               
+                </div>
+                <div class="deliveryOption3">
+                    <h3>Самовывоз</h3>
+                    <p>Склад самовывоза находится по адресу: Московская область, Солнечногорский р-н, д. Чёрная грязь, ул. Карьер, стр. 8</p>
+
+                    <div class="deliveryOption3__block">
+                        <div class="deliveryLocation" style="position:relative;overflow:hidden;"><a href="https://yandex.com/maps/org/21308358354/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Принцесса Мелания</a><a href="https://yandex.com/maps/1/moscow-and-moscow-oblast/category/furniture_factory/184106634/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Мебельная фабрика в Москве и Московской области</a><a href="https://yandex.com/maps/1/moscow-and-moscow-oblast/category/furniture_store/184107871/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Магазин мебели в Москве и Московской области</a><iframe src="https://yandex.com/map-widget/v1/?azimuth=0.04363323129985824&ll=37.308953%2C55.968979&mode=poi&poi%5Bpoint%5D=37.308822%2C55.968906&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D21308358354&z=19.42" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                        <div   class="deliveryOption3__text">
+                            <p><b>Юридическому лицу</b> для получения товара при себе необходимо иметь:</p>
+                            <ul style="margin-bottom: 21px;">
+                                <li>если заказ предоплачен — платёжное поручение с отметкой об оплате;</li>
+                                <li>номер заказа;</li>
+                                <li>печать компании или доверенность на подписание накладных и документ, удостоверяющий личность, в случае отсутствия печати.</li>
+                            </ul>
+                            <p><b>Физическому лицу</b> для получения товара при себе необходимо иметь:</p>
+                            <ul>
+                                <li>если заказ предоплачен — оригинал кассового чека (в случае оплаты онлайн);</li>
+                                <li>номер заказа;</li>
+                                <li>если заказ получает доверительное лицо: доверенность в свободной форме и документ, удостоверяющий личность.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="DoYouHaveQuestion">
+                    <div>
+                        <h3>Остались вопросы по доставке? Напишите нам</h3>
+                        <p>Call-центр работает Пн-Пт с 9:00 до 20:00 Сб с 9:00 до 18:00 (по Мск)</p>
+                    </div>
+                    <button>Написать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="credit__mother furnitureToOrder__mother">
+        <div class="creditPopUp">
+            <div class="creditPopUp__wrapper">
+                <div class="popUp__name">
+                    <h2>Кредит</h2>
+                    <div class="closePopUp closePopUp4"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                            viewBox="0 0 46 46" fill="none">
+                            <path
+                                d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                                fill="#575757" />
+                        </svg></div>
+                </div>
+
+                <div class="creditPopUp__block1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" viewBox="0 0 44 46" fill="none">
+                        <path
+                            d="M40.5735 18.0711H3.42494C1.66494 18.0711 0.910658 16.0669 2.29351 15.114L20.8678 2.39829C21.2107 2.18738 21.6014 2.07617 21.9992 2.07617C22.3971 2.07617 22.7877 2.18738 23.1307 2.39829L41.7049 15.114C43.0878 16.0669 42.3335 18.0711 40.5735 18.0711Z"
+                            stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M40.856 36.1426H3.14174C2.27386 36.1426 1.57031 36.8781 1.57031 37.7854V42.714C1.57031 43.6213 2.27386 44.3569 3.14174 44.3569H40.856C41.7239 44.3569 42.4275 43.6213 42.4275 42.714V37.7854C42.4275 36.8781 41.7239 36.1426 40.856 36.1426Z"
+                            stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M6.28516 18.0713V36.1427M14.1423 18.0713V36.1427M21.9994 18.0713V36.1427M29.8566 18.0713V36.1427M37.7137 18.0713V36.1427"
+                            stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <div>
+                        <h4><svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" viewBox="0 0 44 46"
+                                fill="none">
+                                <path
+                                    d="M40.5735 18.0711H3.42494C1.66494 18.0711 0.910658 16.0669 2.29351 15.114L20.8678 2.39829C21.2107 2.18738 21.6014 2.07617 21.9992 2.07617C22.3971 2.07617 22.7877 2.18738 23.1307 2.39829L41.7049 15.114C43.0878 16.0669 42.3335 18.0711 40.5735 18.0711Z"
+                                    stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M40.856 36.1426H3.14174C2.27386 36.1426 1.57031 36.8781 1.57031 37.7854V42.714C1.57031 43.6213 2.27386 44.3569 3.14174 44.3569H40.856C41.7239 44.3569 42.4275 43.6213 42.4275 42.714V37.7854C42.4275 36.8781 41.7239 36.1426 40.856 36.1426Z"
+                                    stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.28516 18.0713V36.1427M14.1423 18.0713V36.1427M21.9994 18.0713V36.1427M29.8566 18.0713V36.1427M37.7137 18.0713V36.1427"
+                                    stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg> Покупка мебели в кредит. Просто, легко и удобно!</h4>
+                        <p>Вы можете позволить себе, приобрести мебель в нашем интернет-магазине в кредит</p>
+
+                    </div>
+                </div>
+
+                <h4>Преимущества покупки в кредит </h4>
+                <ul>
+                    <li>Оформление полностью online</li>
+                    <li>Простая форма заявка — только ФИО и номер телефона</li>
+                    <li>Быстрый срок принятия решения — до 2-х минут</li>
+                    <li>Решение по кредиту — без СНИСЛа, ИНН и справки с работы</li>
+                    <li>Понятные условия по сумме и графику платежей</li>
+                    <li>Подписание документов по СМС или на встрече с представителем банка</li>
+                </ul>
+
+                <h4>Как легко купить в кредит?</h4>
+                <div class="CreditWays">
+
+                    <div class="firstWay">
+                        <h4>Второй способ</h4>
+
+                        <ul>
+                            <li>Выберите товар на сайте и перейдите в карточку товара</li>
+                            <li>Нажмите на кнопку «Можно в кредит»</li>
+                            <li>Заполните короткую онлайн-заявку</li>
+                            <li>Дождитесь звонка представителя банка с решением, в случае одобрения банком вашей заявки,
+                                представитель банка определит и согласует с вами кредитную программу, время и место
+                                подписания кредитного договора</li>
+                            <li>После успешного подписания документов, банк уведомит нас, что готов выдать кредит</li>
+                            <li>Наш менеджер свяжеться с вами и согласует время и адрес доставки или самовывоза</li>
+                        </ul>
+                    </div>
+                    <div class="firstWay">
+                        <h4>Первый способ</h4>
+
+                        <ul>
+                            <li>Выберите товары на сайте и положите их в корзину</li>
+                            <li>При оформлении заказа в корзине выберите способ оплаты «Покупка в кредит», далее нажмите
+                                кнопку «Оформить заказ»</li>
+                            <li>Дождитесь звонка нашего менеджера для согласования и подтверждения заказа, после этого
+                                с вами свяжется представитель банка для уточнения данных анкеты</li>
+                            <li>В случае одобрения банком вашей заявки, представитель банка определит и согласует с вами
+                                кредитную программу, время и место подписания кредитного договора</li>
+                            <li>После успешного подписания документов, банк сообщит нам, что готов выдать кредит</li>
+                            <li>Наш менеджер свяжеться с вами и согласует время и адрес доставки или самовывоза</li>
+                        </ul>
+                    </div>
+                </div>
+                <h4>Условия предоставления кредита Банком-партнёром</h4>
+                <ul>
+                    <li>Кредит доступен гражданам России</li>
+                    <li>Минимальный возраст: от 18 лет</li>
+                    <li>Сумма кредитования: от 3000–200000 рублей</li>
+                    <li>Первоначальный взнос: от 0%</li>
+                    <li>Срок кредитования: от 3 до 24 месяцев</li>
+                    <li>Процентная ставка рассчитывается индивидуально</li>
+                </ul>
+                <img src="./styles/photo/tinkoff.png" alt="">
+                <span>АО «Тинькофф Банк». Лицензия № 2673 Банка России от 24.03.2015 г.</span>
+            </div>
+        </div>
+    </div>
+    <div class="paymentPopUp__mother furnitureToOrder__mother">
+        <div class="paymentPopUp">
+            <div class="paymentPopUp__wrapper">
+                <div class="popUp__name">
+                    <h2>Оплата</h2>
+                    <div class="closePopUp closePopUp3"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
+                            viewBox="0 0 46 46" fill="none">
+                            <path
+                                d="M12.2673 36.4163L9.58398 33.733L20.3173 22.9997L9.58398 12.2663L12.2673 9.58301L23.0007 20.3163L33.734 9.58301L36.4173 12.2663L25.684 22.9997L36.4173 33.733L33.734 36.4163L23.0007 25.683L12.2673 36.4163Z"
+                                fill="#575757" />
+                        </svg></div>
+                </div>
+
+                <div class="payment__block">
+                    <img src="./styles/photo/paymentIcon.png" alt="">
+                    <div>
+                        <h4>
+                            <img src="./styles/photo/paymentIcon.png" alt="">
+                            ОПЛАТА ПРИ ПОЛУЧЕНИИ ТОВАРА
+                        </h4>
+                        <p>Для вашего удобства мы сделали оплату при получении товара. На привезённые изделия
+                            мы предоставим товарный чек и документацию. если вы представляете юридическое лицо,
+                            то вам также будет предоставлены необходимые документы</p>
+
+                        <div class="payment__block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                                fill="none">
+                                <path
+                                    d="M10.3504 4.59961C9.43539 4.59961 8.55787 4.96309 7.91087 5.61009C7.26387 6.25709 6.90039 7.13461 6.90039 8.04961V37.9496C6.90039 38.8646 7.26387 39.7421 7.91087 40.3891C8.55787 41.0361 9.43539 41.3996 10.3504 41.3996H26.4504C27.3654 41.3996 28.2429 41.0361 28.8899 40.3891C29.5369 39.7421 29.9004 38.8646 29.9004 37.9496V34.4996C29.9004 34.1946 29.7792 33.9021 29.5636 33.6864C29.3479 33.4708 29.0554 33.3496 28.7504 33.3496C27.8005 33.3496 27.1933 33.115 26.7816 32.8068C26.3607 32.4917 26.041 32.0202 25.8064 31.3739C25.3142 30.0215 25.3004 28.2298 25.3004 26.4496C25.3004 26.2983 25.2705 26.1485 25.2125 26.0088C25.1544 25.8691 25.0694 25.7422 24.9623 25.6354L24.3045 24.9753L21.5146 22.1854C20.4405 21.1113 20.1254 20.3914 20.0656 19.9889C20.0196 19.6669 20.1162 19.4507 20.3462 19.2299C20.8384 18.7584 21.1903 18.4387 21.5882 18.3421C21.8251 18.2823 22.3656 18.2409 23.3362 19.2115L30.2362 26.1115C30.4518 26.3274 30.7444 26.4489 31.0496 26.4491C31.2007 26.4492 31.3503 26.4196 31.49 26.3618C31.6296 26.3041 31.7565 26.2194 31.8634 26.1127C31.9704 26.0059 32.0552 25.8791 32.1131 25.7395C32.1711 25.6 32.2009 25.4504 32.201 25.2993C32.2011 25.1482 32.1715 24.9985 32.1138 24.8589C32.056 24.7192 31.9714 24.5923 31.8646 24.4854L29.9004 22.5235V15.4257L35.7884 21.3137C36.1091 21.634 36.3636 22.0144 36.5372 22.4332C36.7109 22.8519 36.8003 23.3007 36.8004 23.754V40.2496C36.8004 40.5546 36.9215 40.8471 37.1372 41.0628C37.3529 41.2785 37.6454 41.3996 37.9504 41.3996C38.2554 41.3996 38.5479 41.2785 38.7636 41.0628C38.9792 40.8471 39.1004 40.5546 39.1004 40.2496V23.754C39.1001 22.2297 38.4945 20.7679 37.4168 19.6899L29.9004 12.1735V8.04961C29.9004 7.13461 29.5369 6.25709 28.8899 5.61009C28.2429 4.96309 27.3654 4.59961 26.4504 4.59961H10.3504ZM27.6004 12.6496V20.2235L24.9646 17.5854C23.6329 16.256 22.3104 15.7983 21.0431 16.1065C20.7941 16.168 20.5527 16.2567 20.3232 16.371C19.2951 16.0732 18.2118 16.0186 17.1589 16.2114C16.1061 16.4043 15.1125 16.8394 14.2567 17.4824C13.4009 18.1253 12.7064 18.9585 12.2281 19.916C11.7497 20.8736 11.5006 21.9292 11.5004 22.9996C11.5003 24.3335 11.8868 25.6388 12.6132 26.7575C13.3396 27.8763 14.3746 28.7605 15.5931 29.3032C16.8116 29.8459 18.1613 30.0238 19.4788 29.8153C20.7963 29.6068 22.0251 29.021 23.0165 28.1286C23.0556 29.458 23.189 30.9116 23.6444 32.1605C23.9848 33.0966 24.5276 33.9913 25.4016 34.6445L25.4154 34.6583C24.715 34.8786 24.1032 35.3165 23.6688 35.9084C23.2345 36.5004 23.0003 37.2154 23.0004 37.9496V39.0996H13.8004V37.9496C13.8004 37.0346 13.4369 36.1571 12.7899 35.5101C12.1429 34.8631 11.2654 34.4996 10.3504 34.4996H9.20039V11.4996H10.3504C11.2654 11.4996 12.1429 11.1361 12.7899 10.4891C13.4369 9.84213 13.8004 8.96461 13.8004 8.04961V6.89961H23.0004V8.04961C23.0004 8.96461 23.3639 9.84213 24.0109 10.4891C24.6579 11.1361 25.5354 11.4996 26.4504 11.4996H27.6004V12.6496ZM27.6004 37.9496V37.9703C27.595 38.2717 27.4714 38.5589 27.2563 38.7701C27.0412 38.9813 26.7518 39.0997 26.4504 39.0996H25.3004V37.9496C25.3004 37.6446 25.4215 37.3521 25.6372 37.1364C25.8529 36.9208 26.1454 36.7996 26.4504 36.7996H27.6004V37.9496ZM13.8004 22.9996C13.8004 21.8298 14.2461 20.7039 15.0468 19.8511C15.8475 18.9982 16.9431 18.4825 18.1106 18.4088C17.8254 18.9378 17.6805 19.5818 17.7909 20.3247C17.9542 21.4333 18.6603 22.5856 19.8862 23.8115L21.9723 25.8976C21.3734 26.6356 20.5607 27.17 19.6457 27.4273C18.7308 27.6846 17.7587 27.6522 16.8629 27.3345C15.9672 27.0169 15.1918 26.4295 14.6434 25.6533C14.095 24.8771 13.8005 23.95 13.8004 22.9996ZM11.5004 6.89961V8.04961C11.5004 8.35461 11.3792 8.64712 11.1636 8.86278C10.9479 9.07845 10.6554 9.19961 10.3504 9.19961H9.20039V8.04961C9.20039 7.74461 9.32155 7.4521 9.53722 7.23644C9.75288 7.02077 10.0454 6.89961 10.3504 6.89961H11.5004ZM9.20039 36.7996H10.3504C10.6554 36.7996 10.9479 36.9208 11.1636 37.1364C11.3792 37.3521 11.5004 37.6446 11.5004 37.9496V39.0996H10.3504C10.0454 39.0996 9.75288 38.9785 9.53722 38.7628C9.32155 38.5471 9.20039 38.2546 9.20039 37.9496V36.7996ZM27.6004 9.19961H26.4504C26.1454 9.19961 25.8529 9.07845 25.6372 8.86278C25.4215 8.64712 25.3004 8.35461 25.3004 8.04961V6.89961H26.4504C26.7554 6.89961 27.0479 7.02077 27.2636 7.23644C27.4792 7.4521 27.6004 7.74461 27.6004 8.04961V9.19961Z"
+                                    fill="#1E1E1E" />
+                            </svg>
+                            <div>
+                                <h3> <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                                        fill="none">
+                                        <path
+                                            d="M10.3504 4.59961C9.43539 4.59961 8.55787 4.96309 7.91087 5.61009C7.26387 6.25709 6.90039 7.13461 6.90039 8.04961V37.9496C6.90039 38.8646 7.26387 39.7421 7.91087 40.3891C8.55787 41.0361 9.43539 41.3996 10.3504 41.3996H26.4504C27.3654 41.3996 28.2429 41.0361 28.8899 40.3891C29.5369 39.7421 29.9004 38.8646 29.9004 37.9496V34.4996C29.9004 34.1946 29.7792 33.9021 29.5636 33.6864C29.3479 33.4708 29.0554 33.3496 28.7504 33.3496C27.8005 33.3496 27.1933 33.115 26.7816 32.8068C26.3607 32.4917 26.041 32.0202 25.8064 31.3739C25.3142 30.0215 25.3004 28.2298 25.3004 26.4496C25.3004 26.2983 25.2705 26.1485 25.2125 26.0088C25.1544 25.8691 25.0694 25.7422 24.9623 25.6354L24.3045 24.9753L21.5146 22.1854C20.4405 21.1113 20.1254 20.3914 20.0656 19.9889C20.0196 19.6669 20.1162 19.4507 20.3462 19.2299C20.8384 18.7584 21.1903 18.4387 21.5882 18.3421C21.8251 18.2823 22.3656 18.2409 23.3362 19.2115L30.2362 26.1115C30.4518 26.3274 30.7444 26.4489 31.0496 26.4491C31.2007 26.4492 31.3503 26.4196 31.49 26.3618C31.6296 26.3041 31.7565 26.2194 31.8634 26.1127C31.9704 26.0059 32.0552 25.8791 32.1131 25.7395C32.1711 25.6 32.2009 25.4504 32.201 25.2993C32.2011 25.1482 32.1715 24.9985 32.1138 24.8589C32.056 24.7192 31.9714 24.5923 31.8646 24.4854L29.9004 22.5235V15.4257L35.7884 21.3137C36.1091 21.634 36.3636 22.0144 36.5372 22.4332C36.7109 22.8519 36.8003 23.3007 36.8004 23.754V40.2496C36.8004 40.5546 36.9215 40.8471 37.1372 41.0628C37.3529 41.2785 37.6454 41.3996 37.9504 41.3996C38.2554 41.3996 38.5479 41.2785 38.7636 41.0628C38.9792 40.8471 39.1004 40.5546 39.1004 40.2496V23.754C39.1001 22.2297 38.4945 20.7679 37.4168 19.6899L29.9004 12.1735V8.04961C29.9004 7.13461 29.5369 6.25709 28.8899 5.61009C28.2429 4.96309 27.3654 4.59961 26.4504 4.59961H10.3504ZM27.6004 12.6496V20.2235L24.9646 17.5854C23.6329 16.256 22.3104 15.7983 21.0431 16.1065C20.7941 16.168 20.5527 16.2567 20.3232 16.371C19.2951 16.0732 18.2118 16.0186 17.1589 16.2114C16.1061 16.4043 15.1125 16.8394 14.2567 17.4824C13.4009 18.1253 12.7064 18.9585 12.2281 19.916C11.7497 20.8736 11.5006 21.9292 11.5004 22.9996C11.5003 24.3335 11.8868 25.6388 12.6132 26.7575C13.3396 27.8763 14.3746 28.7605 15.5931 29.3032C16.8116 29.8459 18.1613 30.0238 19.4788 29.8153C20.7963 29.6068 22.0251 29.021 23.0165 28.1286C23.0556 29.458 23.189 30.9116 23.6444 32.1605C23.9848 33.0966 24.5276 33.9913 25.4016 34.6445L25.4154 34.6583C24.715 34.8786 24.1032 35.3165 23.6688 35.9084C23.2345 36.5004 23.0003 37.2154 23.0004 37.9496V39.0996H13.8004V37.9496C13.8004 37.0346 13.4369 36.1571 12.7899 35.5101C12.1429 34.8631 11.2654 34.4996 10.3504 34.4996H9.20039V11.4996H10.3504C11.2654 11.4996 12.1429 11.1361 12.7899 10.4891C13.4369 9.84213 13.8004 8.96461 13.8004 8.04961V6.89961H23.0004V8.04961C23.0004 8.96461 23.3639 9.84213 24.0109 10.4891C24.6579 11.1361 25.5354 11.4996 26.4504 11.4996H27.6004V12.6496ZM27.6004 37.9496V37.9703C27.595 38.2717 27.4714 38.5589 27.2563 38.7701C27.0412 38.9813 26.7518 39.0997 26.4504 39.0996H25.3004V37.9496C25.3004 37.6446 25.4215 37.3521 25.6372 37.1364C25.8529 36.9208 26.1454 36.7996 26.4504 36.7996H27.6004V37.9496ZM13.8004 22.9996C13.8004 21.8298 14.2461 20.7039 15.0468 19.8511C15.8475 18.9982 16.9431 18.4825 18.1106 18.4088C17.8254 18.9378 17.6805 19.5818 17.7909 20.3247C17.9542 21.4333 18.6603 22.5856 19.8862 23.8115L21.9723 25.8976C21.3734 26.6356 20.5607 27.17 19.6457 27.4273C18.7308 27.6846 17.7587 27.6522 16.8629 27.3345C15.9672 27.0169 15.1918 26.4295 14.6434 25.6533C14.095 24.8771 13.8005 23.95 13.8004 22.9996ZM11.5004 6.89961V8.04961C11.5004 8.35461 11.3792 8.64712 11.1636 8.86278C10.9479 9.07845 10.6554 9.19961 10.3504 9.19961H9.20039V8.04961C9.20039 7.74461 9.32155 7.4521 9.53722 7.23644C9.75288 7.02077 10.0454 6.89961 10.3504 6.89961H11.5004ZM9.20039 36.7996H10.3504C10.6554 36.7996 10.9479 36.9208 11.1636 37.1364C11.3792 37.3521 11.5004 37.6446 11.5004 37.9496V39.0996H10.3504C10.0454 39.0996 9.75288 38.9785 9.53722 38.7628C9.32155 38.5471 9.20039 38.2546 9.20039 37.9496V36.7996ZM27.6004 9.19961H26.4504C26.1454 9.19961 25.8529 9.07845 25.6372 8.86278C25.4215 8.64712 25.3004 8.35461 25.3004 8.04961V6.89961H26.4504C26.7554 6.89961 27.0479 7.02077 27.2636 7.23644C27.4792 7.4521 27.6004 7.74461 27.6004 8.04961V9.19961Z"
+                                            fill="#1E1E1E" />
+                                    </svg> Оплата наличными</h3>
+                                <p>При оплате наличными вы отдаёте наличные деньги (в рублях) курьеру, который доставил
+                                    ваш заказ</p>
+                            </div>
+
+                        </div>
+
+                        <div class="payment__block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                                fill="none">
+                                <path
+                                    d="M10.9246 9.2002C9.24712 9.2002 7.63833 9.86658 6.45216 11.0527C5.26599 12.2389 4.59961 13.8477 4.59961 15.5252V30.4752C4.59961 32.1527 5.26599 33.7615 6.45216 34.9476C7.63833 36.1338 9.24712 36.8002 10.9246 36.8002H23.1146C23.2871 35.9492 23.6459 35.1672 24.1496 34.5002H10.9246C9.85711 34.5002 8.83334 34.0761 8.07851 33.3213C7.32367 32.5665 6.89961 31.5427 6.89961 30.4752V20.7002H41.3996V15.5252C41.3996 13.8477 40.7332 12.2389 39.5471 11.0527C38.3609 9.86658 36.7521 9.2002 35.0746 9.2002H10.9246ZM6.89961 15.5252C6.89961 13.3034 8.70281 11.5002 10.9246 11.5002H35.0746C37.2964 11.5002 39.0996 13.3034 39.0996 15.5252V18.4002H6.89961V15.5252ZM37.9496 27.6002C37.9496 28.8202 37.465 29.9902 36.6023 30.8529C35.7396 31.7156 34.5696 32.2002 33.3496 32.2002C32.1296 32.2002 30.9596 31.7156 30.0969 30.8529C29.2343 29.9902 28.7496 28.8202 28.7496 27.6002C28.7496 26.3802 29.2343 25.2102 30.0969 24.3475C30.9596 23.4848 32.1296 23.0002 33.3496 23.0002C34.5696 23.0002 35.7396 23.4848 36.6023 24.3475C37.465 25.2102 37.9496 26.3802 37.9496 27.6002ZM41.3996 37.9502C41.3996 40.8137 39.0996 43.7002 33.3496 43.7002C27.5996 43.7002 25.2996 40.8252 25.2996 37.9502C25.2996 37.0352 25.6631 36.1577 26.3101 35.5107C26.9571 34.8637 27.8346 34.5002 28.7496 34.5002H37.9496C38.8646 34.5002 39.7421 34.8637 40.3891 35.5107C41.0361 36.1577 41.3996 37.0352 41.3996 37.9502Z"
+                                    fill="#1E1E1E" />
+                            </svg>
+                            <div>
+                                <h3><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                                        fill="none">
+                                        <path
+                                            d="M10.9246 9.2002C9.24712 9.2002 7.63833 9.86658 6.45216 11.0527C5.26599 12.2389 4.59961 13.8477 4.59961 15.5252V30.4752C4.59961 32.1527 5.26599 33.7615 6.45216 34.9476C7.63833 36.1338 9.24712 36.8002 10.9246 36.8002H23.1146C23.2871 35.9492 23.6459 35.1672 24.1496 34.5002H10.9246C9.85711 34.5002 8.83334 34.0761 8.07851 33.3213C7.32367 32.5665 6.89961 31.5427 6.89961 30.4752V20.7002H41.3996V15.5252C41.3996 13.8477 40.7332 12.2389 39.5471 11.0527C38.3609 9.86658 36.7521 9.2002 35.0746 9.2002H10.9246ZM6.89961 15.5252C6.89961 13.3034 8.70281 11.5002 10.9246 11.5002H35.0746C37.2964 11.5002 39.0996 13.3034 39.0996 15.5252V18.4002H6.89961V15.5252ZM37.9496 27.6002C37.9496 28.8202 37.465 29.9902 36.6023 30.8529C35.7396 31.7156 34.5696 32.2002 33.3496 32.2002C32.1296 32.2002 30.9596 31.7156 30.0969 30.8529C29.2343 29.9902 28.7496 28.8202 28.7496 27.6002C28.7496 26.3802 29.2343 25.2102 30.0969 24.3475C30.9596 23.4848 32.1296 23.0002 33.3496 23.0002C34.5696 23.0002 35.7396 23.4848 36.6023 24.3475C37.465 25.2102 37.9496 26.3802 37.9496 27.6002ZM41.3996 37.9502C41.3996 40.8137 39.0996 43.7002 33.3496 43.7002C27.5996 43.7002 25.2996 40.8252 25.2996 37.9502C25.2996 37.0352 25.6631 36.1577 26.3101 35.5107C26.9571 34.8637 27.8346 34.5002 28.7496 34.5002H37.9496C38.8646 34.5002 39.7421 34.8637 40.3891 35.5107C41.0361 36.1577 41.3996 37.0352 41.3996 37.9502Z"
+                                            fill="#1E1E1E" />
+                                    </svg> Оплата банковской картой </h3>
+                                <p>Вы можете оплатить свой заказ пластиковой картой при получении. При оформлении заказа
+                                    на сайте, укажите соответствующий способ оплаты. Курьер может попросить
+                                    вас предъявить документ, удостоверяющий личность</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="payment__block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
+                        <path
+                            d="M13.8008 4.59961C12.5808 4.59961 11.4108 5.08425 10.5481 5.94692C9.68542 6.80959 9.20078 7.97961 9.20078 9.19961V25.2996H11.5008V9.19961C11.5008 8.58961 11.7431 8.0046 12.1744 7.57326C12.6058 7.14193 13.1908 6.89961 13.8008 6.89961H29.9008C30.5108 6.89961 31.0958 7.14193 31.5271 7.57326C31.9585 8.0046 32.2008 8.58961 32.2008 9.19961V34.4996H25.3008V36.7996H34.5008C36.3308 36.7996 38.0858 36.0727 39.3798 34.7787C40.6738 33.4846 41.4008 31.7296 41.4008 29.8996V25.2996H34.5008V9.19961C34.5008 7.97961 34.0161 6.80959 33.1535 5.94692C32.2908 5.08425 31.1208 4.59961 29.9008 4.59961H13.8008ZM39.1008 29.8996C39.1008 31.1196 38.6161 32.2896 37.7535 33.1523C36.8908 34.015 35.7208 34.4996 34.5008 34.4996V27.5996H39.1008V29.8996ZM17.2508 11.4996C16.9458 11.4996 16.6533 11.6208 16.4376 11.8364C16.2219 12.0521 16.1008 12.3446 16.1008 12.6496C16.1008 12.9546 16.2219 13.2471 16.4376 13.4628C16.6533 13.6784 16.9458 13.7996 17.2508 13.7996H26.4508C26.7558 13.7996 27.0483 13.6784 27.264 13.4628C27.4796 13.2471 27.6008 12.9546 27.6008 12.6496C27.6008 12.3446 27.4796 12.0521 27.264 11.8364C27.0483 11.6208 26.7558 11.4996 26.4508 11.4996H17.2508ZM16.1008 17.2496C16.1008 16.9446 16.2219 16.6521 16.4376 16.4364C16.6533 16.2208 16.9458 16.0996 17.2508 16.0996H26.4508C26.7558 16.0996 27.0483 16.2208 27.264 16.4364C27.4796 16.6521 27.6008 16.9446 27.6008 17.2496C27.6008 17.5546 27.4796 17.8471 27.264 18.0628C27.0483 18.2785 26.7558 18.3996 26.4508 18.3996H17.2508C16.9458 18.3996 16.6533 18.2785 16.4376 18.0628C16.2219 17.8471 16.1008 17.5546 16.1008 17.2496ZM19.5508 27.5996C20.4658 27.5996 21.3433 27.9631 21.9903 28.6101C22.6373 29.2571 23.0008 30.1346 23.0008 31.0496V37.9496C23.0008 38.8646 22.6373 39.7421 21.9903 40.3891C21.3433 41.0361 20.4658 41.3996 19.5508 41.3996H5.75078C4.83578 41.3996 3.95826 41.0361 3.31126 40.3891C2.66426 39.7421 2.30078 38.8646 2.30078 37.9496V31.0496C2.30078 30.1346 2.66426 29.2571 3.31126 28.6101C3.95826 27.9631 4.83578 27.5996 5.75078 27.5996H19.5508ZM20.7008 37.9496V35.6496C19.7858 35.6496 18.9083 36.0131 18.2613 36.6601C17.6143 37.3071 17.2508 38.1846 17.2508 39.0996H19.5508C19.5508 38.7946 19.6719 38.5021 19.8876 38.2864C20.1033 38.0708 20.3958 37.9496 20.7008 37.9496ZM20.7008 31.0496C20.3958 31.0496 20.1033 30.9285 19.8876 30.7128C19.6719 30.4971 19.5508 30.2046 19.5508 29.8996H17.2508C17.2508 30.8146 17.6143 31.6921 18.2613 32.3391C18.9083 32.9861 19.7858 33.3496 20.7008 33.3496V31.0496ZM5.75078 29.8996C5.75078 30.2046 5.62962 30.4971 5.41395 30.7128C5.19829 30.9285 4.90578 31.0496 4.60078 31.0496V33.3496C5.51578 33.3496 6.3933 32.9861 7.0403 32.3391C7.6873 31.6921 8.05078 30.8146 8.05078 29.8996H5.75078ZM4.60078 37.9496C4.90578 37.9496 5.19829 38.0708 5.41395 38.2864C5.62962 38.5021 5.75078 38.7946 5.75078 39.0996H8.05078C8.05078 38.1846 7.6873 37.3071 7.0403 36.6601C6.3933 36.0131 5.51578 35.6496 4.60078 35.6496V37.9496ZM12.6508 31.0496C11.7358 31.0496 10.8583 31.4131 10.2113 32.0601C9.56426 32.7071 9.20078 33.5846 9.20078 34.4996C9.20078 35.4146 9.56426 36.2921 10.2113 36.9391C10.8583 37.5861 11.7358 37.9496 12.6508 37.9496C13.5658 37.9496 14.4433 37.5861 15.0903 36.9391C15.7373 36.2921 16.1008 35.4146 16.1008 34.4996C16.1008 33.5846 15.7373 32.7071 15.0903 32.0601C14.4433 31.4131 13.5658 31.0496 12.6508 31.0496Z"
+                            fill="#1E1E1E" />
+                    </svg>
+
+                    <div>
+                        <h4><svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+                                fill="none">
+                                <path
+                                    d="M13.8008 4.59961C12.5808 4.59961 11.4108 5.08425 10.5481 5.94692C9.68542 6.80959 9.20078 7.97961 9.20078 9.19961V25.2996H11.5008V9.19961C11.5008 8.58961 11.7431 8.0046 12.1744 7.57326C12.6058 7.14193 13.1908 6.89961 13.8008 6.89961H29.9008C30.5108 6.89961 31.0958 7.14193 31.5271 7.57326C31.9585 8.0046 32.2008 8.58961 32.2008 9.19961V34.4996H25.3008V36.7996H34.5008C36.3308 36.7996 38.0858 36.0727 39.3798 34.7787C40.6738 33.4846 41.4008 31.7296 41.4008 29.8996V25.2996H34.5008V9.19961C34.5008 7.97961 34.0161 6.80959 33.1535 5.94692C32.2908 5.08425 31.1208 4.59961 29.9008 4.59961H13.8008ZM39.1008 29.8996C39.1008 31.1196 38.6161 32.2896 37.7535 33.1523C36.8908 34.015 35.7208 34.4996 34.5008 34.4996V27.5996H39.1008V29.8996ZM17.2508 11.4996C16.9458 11.4996 16.6533 11.6208 16.4376 11.8364C16.2219 12.0521 16.1008 12.3446 16.1008 12.6496C16.1008 12.9546 16.2219 13.2471 16.4376 13.4628C16.6533 13.6784 16.9458 13.7996 17.2508 13.7996H26.4508C26.7558 13.7996 27.0483 13.6784 27.264 13.4628C27.4796 13.2471 27.6008 12.9546 27.6008 12.6496C27.6008 12.3446 27.4796 12.0521 27.264 11.8364C27.0483 11.6208 26.7558 11.4996 26.4508 11.4996H17.2508ZM16.1008 17.2496C16.1008 16.9446 16.2219 16.6521 16.4376 16.4364C16.6533 16.2208 16.9458 16.0996 17.2508 16.0996H26.4508C26.7558 16.0996 27.0483 16.2208 27.264 16.4364C27.4796 16.6521 27.6008 16.9446 27.6008 17.2496C27.6008 17.5546 27.4796 17.8471 27.264 18.0628C27.0483 18.2785 26.7558 18.3996 26.4508 18.3996H17.2508C16.9458 18.3996 16.6533 18.2785 16.4376 18.0628C16.2219 17.8471 16.1008 17.5546 16.1008 17.2496ZM19.5508 27.5996C20.4658 27.5996 21.3433 27.9631 21.9903 28.6101C22.6373 29.2571 23.0008 30.1346 23.0008 31.0496V37.9496C23.0008 38.8646 22.6373 39.7421 21.9903 40.3891C21.3433 41.0361 20.4658 41.3996 19.5508 41.3996H5.75078C4.83578 41.3996 3.95826 41.0361 3.31126 40.3891C2.66426 39.7421 2.30078 38.8646 2.30078 37.9496V31.0496C2.30078 30.1346 2.66426 29.2571 3.31126 28.6101C3.95826 27.9631 4.83578 27.5996 5.75078 27.5996H19.5508ZM20.7008 37.9496V35.6496C19.7858 35.6496 18.9083 36.0131 18.2613 36.6601C17.6143 37.3071 17.2508 38.1846 17.2508 39.0996H19.5508C19.5508 38.7946 19.6719 38.5021 19.8876 38.2864C20.1033 38.0708 20.3958 37.9496 20.7008 37.9496ZM20.7008 31.0496C20.3958 31.0496 20.1033 30.9285 19.8876 30.7128C19.6719 30.4971 19.5508 30.2046 19.5508 29.8996H17.2508C17.2508 30.8146 17.6143 31.6921 18.2613 32.3391C18.9083 32.9861 19.7858 33.3496 20.7008 33.3496V31.0496ZM5.75078 29.8996C5.75078 30.2046 5.62962 30.4971 5.41395 30.7128C5.19829 30.9285 4.90578 31.0496 4.60078 31.0496V33.3496C5.51578 33.3496 6.3933 32.9861 7.0403 32.3391C7.6873 31.6921 8.05078 30.8146 8.05078 29.8996H5.75078ZM4.60078 37.9496C4.90578 37.9496 5.19829 38.0708 5.41395 38.2864C5.62962 38.5021 5.75078 38.7946 5.75078 39.0996H8.05078C8.05078 38.1846 7.6873 37.3071 7.0403 36.6601C6.3933 36.0131 5.51578 35.6496 4.60078 35.6496V37.9496ZM12.6508 31.0496C11.7358 31.0496 10.8583 31.4131 10.2113 32.0601C9.56426 32.7071 9.20078 33.5846 9.20078 34.4996C9.20078 35.4146 9.56426 36.2921 10.2113 36.9391C10.8583 37.5861 11.7358 37.9496 12.6508 37.9496C13.5658 37.9496 14.4433 37.5861 15.0903 36.9391C15.7373 36.2921 16.1008 35.4146 16.1008 34.4996C16.1008 33.5846 15.7373 32.7071 15.0903 32.0601C14.4433 31.4131 13.5658 31.0496 12.6508 31.0496Z"
+                                    fill="#1E1E1E" />
+                            </svg> БЕЗНАЛИЧНЫЙ РАСЧЁТ</h4>
+
+                        <p>Оплатить покупку на сайте можно безналичным способом оплаты. Для этого отправьте на нашу
+                            почту: <span> info@p-melania.ru</span> реквизиты вашей организации и вы получите счёт
+                            для оплаты.
+                            <br> <span> Внимание!</span> Срок поступления денежных средств по безналичному расчёту
+                            от 1-го до 3-х банковских дней
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="payment__block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" viewBox="0 0 44 46" fill="none">
+                        <path
+                            d="M40.5735 18.0711H3.42494C1.66494 18.0711 0.910658 16.0669 2.29351 15.114L20.8678 2.39829C21.2107 2.18738 21.6014 2.07617 21.9992 2.07617C22.3971 2.07617 22.7877 2.18738 23.1307 2.39829L41.7049 15.114C43.0878 16.0669 42.3335 18.0711 40.5735 18.0711Z"
+                            stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M40.856 36.1426H3.14174C2.27386 36.1426 1.57031 36.8781 1.57031 37.7854V42.714C1.57031 43.6213 2.27386 44.3569 3.14174 44.3569H40.856C41.7239 44.3569 42.4275 43.6213 42.4275 42.714V37.7854C42.4275 36.8781 41.7239 36.1426 40.856 36.1426Z"
+                            stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M6.28516 18.0713V36.1427M14.1423 18.0713V36.1427M21.9994 18.0713V36.1427M29.8566 18.0713V36.1427M37.7137 18.0713V36.1427"
+                            stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div>
+                        <h4> <svg xmlns="http://www.w3.org/2000/svg" width="44" height="46" viewBox="0 0 44 46"
+                                fill="none">
+                                <path
+                                    d="M40.5735 18.0711H3.42494C1.66494 18.0711 0.910658 16.0669 2.29351 15.114L20.8678 2.39829C21.2107 2.18738 21.6014 2.07617 21.9992 2.07617C22.3971 2.07617 22.7877 2.18738 23.1307 2.39829L41.7049 15.114C43.0878 16.0669 42.3335 18.0711 40.5735 18.0711Z"
+                                    stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M40.856 36.1426H3.14174C2.27386 36.1426 1.57031 36.8781 1.57031 37.7854V42.714C1.57031 43.6213 2.27386 44.3569 3.14174 44.3569H40.856C41.7239 44.3569 42.4275 43.6213 42.4275 42.714V37.7854C42.4275 36.8781 41.7239 36.1426 40.856 36.1426Z"
+                                    stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M6.28516 18.0713V36.1427M14.1423 18.0713V36.1427M21.9994 18.0713V36.1427M29.8566 18.0713V36.1427M37.7137 18.0713V36.1427"
+                                    stroke="#1E1E1E" stroke-width="2.3" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg> ОПЛАТА В КРЕДИТ</h4>
+
+                        <p>При желании вы можете оформить Кредит у нашего банка партнёра АО «Тинькофф банк». Более
+                            подробно с условиями, вы можете ознакомиться на нашем сайте в разделе «Кредит» </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <div class="takeBackCall__mother">
         <div id="takeBackCall">
@@ -914,7 +1574,6 @@
             </div>
         </div>
     </div>
-
 
 
     <div class="delivery__mother">
@@ -1318,18 +1977,21 @@
                     <div>
 
                         <div class="footer__info__watsapp">
-                            <div>
-                                Свяжитесь с нами <img src="./styles/photo/whatsapp.png" alt="">
-                            </div>
+                            <a href="https://wa.me/74994720974">
+                                <div>
 
-                            <p>+7 499 472-09-74</p>
-                            <p>+7 985 773-23-11</p>
+                                    Свяжитесь с нами <img src="./styles/photo/whatsapp.png" alt="">
+                                </div>
+                            </a>
+
+                            <p><a href="tel:+74994720974"> +7 499 472-09-74</a></p>
+                            <p><a href="tel: +79857732311"> +7 985 773-23-11</a></p>
                             <span>Перезвоните мне</span>
                         </div>
 
                         <div class="footer__info__work">
                             <p style="padding-bottom: 0;">По общим вопросам:</p>
-                            <span>info@p-melania.ru</span>
+                            <span> <a href="mailto: info@p-melania.ru">info@p-melania.ru </a></span>
                         </div>
 
                     </div>
@@ -1355,8 +2017,7 @@
                         </div>
                         <div class="paymentMethod">
                             Мы принимаем к оплате:
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="41" viewBox="0 0 62 41"
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="62" height="41" viewBox="0 0 62 41"
                                     fill="none">
                                     <g clip-path="url(#clip0_2_2027)">
                                         <mask id="mask0_2_2027" style="mask-type:luminance" maskUnits="userSpaceOnUse"
@@ -1416,23 +2077,23 @@
                                 </svg>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="62" height="41" viewBox="0 0 62 41"
                                     fill="none">
-                                    <g clip-path="url(#clip0_2_4174)">
-                                        <mask id="mask0_2_4174" style="mask-type:luminance" maskUnits="userSpaceOnUse"
+                                    <g clip-path="url(#clip0_2_2017)">
+                                        <mask id="mask0_2_2017" style="mask-type:luminance" maskUnits="userSpaceOnUse"
                                             x="0" y="0" width="62" height="41">
                                             <path d="M62 0H0V41H62V0Z" fill="white" />
                                         </mask>
-                                        <g mask="url(#mask0_2_4174)">
+                                        <g mask="url(#mask0_2_2017)">
                                             <path
                                                 d="M0 5.125C0 2.29454 2.3132 0 5.16667 0H56.8333C59.6869 0 62 2.29454 62 5.125V35.875C62 38.7055 59.6869 41 56.8333 41H5.16667C2.31319 41 0 38.7055 0 35.875V5.125Z"
                                                 fill="#DCEFDC" />
                                             <path
-                                                d="M51.611 13H41.6724C42.2513 16.0909 45.4355 19 48.9093 19H56.8217C56.9183 18.7273 56.9183 18.2727 56.9183 18C56.9183 15.2727 54.5059 13 51.611 13Z"
-                                                fill="url(#paint0_linear_2_4174)" />
+                                                d="M51.6106 13H41.6719C42.2508 16.0909 45.435 19 48.9088 19H56.8212C56.9178 18.7273 56.9178 18.2727 56.9178 18C56.9178 15.2727 54.5054 13 51.6106 13Z"
+                                                fill="url(#paint0_linear_2_2017)" />
                                             <path
-                                                d="M42.6885 20V28H47.5617V23.759H51.85C54.1891 23.759 56.236 22.1205 56.918 20H42.6885Z"
+                                                d="M42.6895 20V28H47.5627V23.759H51.8509C54.1901 23.759 56.2369 22.1205 56.919 20H42.6895Z"
                                                 fill="#4FAD50" />
                                             <path
-                                                d="M25.4097 13V28H29.7098C29.7098 28 30.7848 28 31.3712 26.9286C34.3031 21.1818 35.1828 19.4286 35.1828 19.4286H35.7692V28H40.6556V13H36.3556C36.3556 13 35.2806 13.0974 34.6942 14.0714C32.2509 19.039 30.8825 21.5714 30.8825 21.5714H30.2962V13H25.4097Z"
+                                                d="M25.4102 13V28H29.7103C29.7103 28 30.7853 28 31.3716 26.9286C34.3036 21.1818 35.1833 19.4286 35.1833 19.4286H35.7697V28H40.6561V13H36.3561C36.3561 13 35.2811 13.0974 34.6947 14.0714C32.2514 19.039 30.883 21.5714 30.883 21.5714H30.2966V13H25.4102Z"
                                                 fill="#4FAD50" />
                                             <path
                                                 d="M5.08203 28V13H9.94775C9.94775 13 11.3102 13 12.0887 15.1429C14.035 20.7923 14.2296 21.5715 14.2296 21.5715C14.2296 21.5715 14.6188 20.2078 16.3705 15.1429C17.149 13 18.5114 13 18.5114 13H23.3771V28H18.5114V19.9156H17.9275L15.2027 28H13.0618L10.337 19.9156H9.75313V28H5.08203Z"
@@ -1440,12 +2101,12 @@
                                         </g>
                                     </g>
                                     <defs>
-                                        <linearGradient id="paint0_linear_2_4174" x1="41.6551" y1="16.043" x2="56.8842"
+                                        <linearGradient id="paint0_linear_2_2017" x1="41.6546" y1="16.043" x2="56.8837"
                                             y2="16.043" gradientUnits="userSpaceOnUse">
                                             <stop stop-color="#27B1E6" />
                                             <stop offset="1" stop-color="#148ACA" />
                                         </linearGradient>
-                                        <clipPath id="clip0_2_4174">
+                                        <clipPath id="clip0_2_2017">
                                             <rect width="62" height="41" fill="white" />
                                         </clipPath>
                                     </defs>
@@ -1542,23 +2203,23 @@
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" width="62" height="41" viewBox="0 0 62 41"
                                 fill="none">
-                                <g clip-path="url(#clip0_2_4174)">
-                                    <mask id="mask0_2_4174" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
+                                <g clip-path="url(#clip0_2_3118)">
+                                    <mask id="mask0_2_3118" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0"
                                         y="0" width="62" height="41">
                                         <path d="M62 0H0V41H62V0Z" fill="white" />
                                     </mask>
-                                    <g mask="url(#mask0_2_4174)">
+                                    <g mask="url(#mask0_2_3118)">
                                         <path
                                             d="M0 5.125C0 2.29454 2.3132 0 5.16667 0H56.8333C59.6869 0 62 2.29454 62 5.125V35.875C62 38.7055 59.6869 41 56.8333 41H5.16667C2.31319 41 0 38.7055 0 35.875V5.125Z"
                                             fill="#DCEFDC" />
                                         <path
-                                            d="M51.611 13H41.6724C42.2513 16.0909 45.4355 19 48.9093 19H56.8217C56.9183 18.7273 56.9183 18.2727 56.9183 18C56.9183 15.2727 54.5059 13 51.611 13Z"
-                                            fill="url(#paint0_linear_2_4174)" />
+                                            d="M51.6106 13H41.6719C42.2508 16.0909 45.435 19 48.9088 19H56.8212C56.9178 18.7273 56.9178 18.2727 56.9178 18C56.9178 15.2727 54.5054 13 51.6106 13Z"
+                                            fill="url(#paint0_linear_2_3118)" />
                                         <path
                                             d="M42.6885 20V28H47.5617V23.759H51.85C54.1891 23.759 56.236 22.1205 56.918 20H42.6885Z"
                                             fill="#4FAD50" />
                                         <path
-                                            d="M25.4097 13V28H29.7098C29.7098 28 30.7848 28 31.3712 26.9286C34.3031 21.1818 35.1828 19.4286 35.1828 19.4286H35.7692V28H40.6556V13H36.3556C36.3556 13 35.2806 13.0974 34.6942 14.0714C32.2509 19.039 30.8825 21.5714 30.8825 21.5714H30.2962V13H25.4097Z"
+                                            d="M25.4102 13V28H29.7103C29.7103 28 30.7853 28 31.3716 26.9286C34.3036 21.1818 35.1833 19.4286 35.1833 19.4286H35.7697V28H40.6561V13H36.3561C36.3561 13 35.2811 13.0974 34.6947 14.0714C32.2514 19.039 30.883 21.5714 30.883 21.5714H30.2966V13H25.4102Z"
                                             fill="#4FAD50" />
                                         <path
                                             d="M5.08203 28V13H9.94775C9.94775 13 11.3102 13 12.0887 15.1429C14.035 20.7923 14.2296 21.5715 14.2296 21.5715C14.2296 21.5715 14.6188 20.2078 16.3705 15.1429C17.149 13 18.5114 13 18.5114 13H23.3771V28H18.5114V19.9156H17.9275L15.2027 28H13.0618L10.337 19.9156H9.75313V28H5.08203Z"
@@ -1566,12 +2227,12 @@
                                     </g>
                                 </g>
                                 <defs>
-                                    <linearGradient id="paint0_linear_2_4174" x1="41.6551" y1="16.043" x2="56.8842"
+                                    <linearGradient id="paint0_linear_2_3118" x1="41.6546" y1="16.043" x2="56.8837"
                                         y2="16.043" gradientUnits="userSpaceOnUse">
                                         <stop stop-color="#27B1E6" />
                                         <stop offset="1" stop-color="#148ACA" />
                                     </linearGradient>
-                                    <clipPath id="clip0_2_4174">
+                                    <clipPath id="clip0_2_3118">
                                         <rect width="62" height="41" fill="white" />
                                     </clipPath>
                                 </defs>
@@ -1609,27 +2270,27 @@
                     <div class="menu__el">
                         <p>О фабрике</p>
                         <ul>
-                            <li><a href="">История</a></li>
+                            <li><a href="factory.html">История</a></li>
                             <li><a href="">Сотрудничество</a></li>
-                            <li><a href="">Шоу-рум</a></li>
+                            <li><a href="showroom.html">Шоу-рум</a></li>
                         </ul>
                     </div>
                     <div class="menu__el">
                         <p>Покупателю</p>
                         <ul>
-                            <li><a href="">Оплата</a></li>
-                            <li><a href="">Доставка</a></li>
-                            <li><a href="">Контакты</a></li>
-                            <li><a href="">Купить в кредит</a></li>
-                            <li><a href="">Политика конфиденциальности</a></li>
-                            <li><a href="">Публичная оферта</a></li>
+                            <li><a class="paymentPopUpBut">Оплата</a></li>
+                            <li><a class="deliveryPopUpBut">Доставка</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                            <li><a class="creditPopUpBut">Купить в кредит</a></li>
+                            <li><a href="documentation2.html">Политика конфиденциальности</a></li>
+                            <li><a href="documentation1.html">Публичная оферта</a></li>
                         </ul>
                         <!-- <img src="./styles/photo/mark.png" alt=""> -->
                     </div>
                     <div class="menu__el">
                         <p>Каталог</p>
                         <ul>
-                            <li><a href="">Гостиные</a></li>
+                            <li><a href="catalogSeeALl.html">Гостиные</a></li>
                             <li><a href="">Спальни</a></li>
                             <li><a href="">Прихожие</a></li>
                             <li><a href="">Мягкая мебель</a></li>
@@ -1644,12 +2305,14 @@
                 </div>
                 <div class="footer__info">
                     <div class="footer__info__watsapp">
-                        <div>
-                            Свяжитесь с нами <img src="./styles/photo/whatsapp.png" alt="">
-                        </div>
+                        <a href="https://wa.me/74994720974">
+                            <div>
+                                Свяжитесь с нами <img src="./styles/photo/whatsapp.png" alt="">
+                            </div>
+                        </a>
 
-                        <p>+7 499 472-09-74</p>
-                        <p>+7 985 773-23-11</p>
+                        <p><a href="tel:+74994720974"> +7 499 472-09-74</a></p>
+                        <p><a href="tel: +79857732311"> +7 985 773-23-11</a></p>
                         <span>Перезвоните мне</span>
                     </div>
                     <div class="footer__info__work">
@@ -1659,7 +2322,7 @@
                     </div>
                     <div class="footer__info__work">
                         <p style="padding-bottom: 0;">По общим вопросам:</p>
-                        <span>info@p-melania.ru</span>
+                        <span> <a href="mailto: info@p-melania.ru">info@p-melania.ru</a></span>
                     </div>
                     <div class="footer__info__icons">
                         <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
