@@ -7184,6 +7184,20 @@
             text-align: left;
             width: 188px;
         }
+        .addYourInterier__wrapper .product__price p{
+            font-size: 18px;
+        }
+        .addYourInterier__wrapper .product__price del{
+            font-size: 12px;
+        }
+        .colectionProduct .product__price del{
+            font-size: 12px;
+            align-self: flex-end;
+        }
+        .colectionProduct .product__photo{
+            height: auto;
+            min-height: 90px !important;
+        }
     }
 
     @media screen and (max-width:550px) {
