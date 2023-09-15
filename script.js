@@ -364,6 +364,19 @@ deliveryPopUpBut.onclick = function () {
 closePopUp5.onclick = function () {
     deliveryPopUp__mother.classList.remove('displayFlex')
 }
+const deliveryNames=document.querySelectorAll('.deliveryNames li')
+const deliveryOptions=[document.querySelector('.deliveryOption1'),document.querySelector('.deliveryOption2'),document.querySelector('.deliveryOption3')]
+deliveryNames.forEach((e,i)=>{
+    e.addEventListener('click',function(){
+        deliveryNames.forEach((el,index)=>{
+            el.classList.remove('fur-active')
+            deliveryOptions[index].classList.remove('displayBlock')
+        })
+        e.classList.add('fur-active')
+        deliveryOptions[i].classList.add('displayBlock')
+
+    })
+})
 
 
 try {

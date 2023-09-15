@@ -2906,7 +2906,12 @@
         width: 1135px;
         height: 542px;
     }
-
+    .slide__call{
+        position: fixed;
+    }
+    .miniSlider .swiper-slide {
+        cursor: pointer;
+    }
     .miniSlider {
         margin-top: 32px;
         margin-left: 300px !important;
@@ -4020,14 +4025,25 @@
         background: rgba(0, 0, 0, 0.7);
         z-index: 10000000000000000;
         width: 100%;
-        height: 165vh;
+        height: 190vh;
         display: none;
         align-items: center;
         justify-content: flex-end;
         top: 0;
         left: 0;
     }
-
+    .zayavka1PopUp ,.zayavka2PopUp{
+        position: fixed !important;
+    }
+    .miniPopUp1{
+        background: white
+    }
+    .writeReviewPopUp1{
+        background: white;
+    }
+    .writeReview__mother{
+        position: fixed !important;
+    }
     .forPartners form h3 {
         text-align: center;
         padding: 0;
