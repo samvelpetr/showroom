@@ -701,9 +701,11 @@
     .location__info2 {
         right: 0 !important;
     }
-
+    #howToGetUsSect{
+        padding-top: 60px;
+    }
     .location__info3 {
-        right: 40% !important;
+        right: 540px!important;
     }
 
     .workTimes__main {
@@ -848,7 +850,7 @@
     }
 
     .salesHit__swiper .swiper-slide {
-        width: 400px;
+        width: 400px !important;
         padding: 25px 7px 28px;
         display: flex;
         flex-direction: column;
@@ -858,7 +860,7 @@
     .salesHit__swiper .swiper-slide:hover {
         width: 420px;
         transition: .5s;
-        height: 696px;
+        /* height: 696px; */
         box-shadow: 0px 0.5px 28px 0px rgba(0, 0, 0, 0.07);
     }
 
@@ -969,7 +971,7 @@
 
     .freeDelivery__photo {
         position: absolute;
-        left: 0;
+        left: 8%;
         top: -41px;
     }
 
@@ -1008,6 +1010,7 @@
 
     .ideaForHome__element p {
         font-size: 24px;
+        display: block;
         padding: 19px;
         text-align: right;
         margin-top: 26px;
@@ -1017,18 +1020,18 @@
     .ideaElement1 {
         background: url(./photo/idea1.png);
         width: 697px;
-        height: 680px;
+        height: 654px;
     }
 
     .ideaElement2 {
         background: url(./photo/idea2.png);
         width: 551px;
-        height: 592px;
+        height: 566px;
     }
 
     .ideaElement3 {
         width: 550px;
-        height: 617px;
+        height: 591px;
         background: url(./photo/idea5.png);
     }
 
@@ -1251,7 +1254,7 @@
 
     #location {
         position: relative;
-        padding: 60px 0 180px;
+        padding: 120px 0 180px;
     }
 
     .location__map {
@@ -2059,7 +2062,7 @@
     }
 
     .collectionKuba__wrapper h2 {
-        padding: 40px 0;
+        padding: 80px 0 40px;
         text-align: center;
     }
 
@@ -2232,8 +2235,9 @@
 
     .product__addedInCart {
         display: flex;
+        align-items: flex-end;
         gap: 8px;
-        margin-top: 25px;
+        margin-top: 27px;
     }
 
     #salesSect>h2 {
@@ -2248,15 +2252,17 @@
         padding: 20px 10px;
         font-weight: 600;
         cursor: pointer;
+        height: 69px;
         border: none;
         text-align: center;
     }
 
     .productCount {
         border: 3px solid #8CAFC5;
-        padding: 20px 10px;
+        padding: 15px 10px;
         width: 125px;
         justify-content: center;
+        height: 69px;
         display: flex;
         align-items: center;
         gap: 28px;
@@ -2538,6 +2544,7 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+         margin-bottom: 60px;
     }
 
     #MakeOrder {
@@ -3294,7 +3301,15 @@
         margin-top: 30px;
         font-weight: 600;
     }
-
+    #salesSect>h2{
+        padding-top: 80px;
+    }
+    #salesSect .container h2{
+        padding-top: 80px;
+    }
+    #showroomSection{
+        margin-bottom: 80px;
+    }
     @media screen and (max-width:1730px) {
         .container {
             width: 1402px;
@@ -3307,7 +3322,22 @@
         .product__main {
             gap: 20px;
         }
-
+        /* .howToGetUs img{
+            width: 500px;
+        } */
+        #howToGetUsSect h2{
+            margin-bottom: 32px;
+        }
+        .emailHost2{
+            margin-top: 175px !important;
+            margin-bottom: 60px;
+        }
+        .howToGetUs p {
+            line-height: 150%;
+        }
+        .howToGetUs h3{
+            padding-top: 10px;
+        }
         #show1 {
             width: 566px;
         }
@@ -3472,8 +3502,8 @@
 
         .ideaElement1 {
             width: 567px;
-            height: 660px;
-
+            height: auto !important;
+            background-size: contain;
         }
 
         .ideaElement4 {
@@ -3486,12 +3516,15 @@
 
         .ideaElement2 {
             width: 445px;
-            height: 548px;
+            height: auto;
+            height: auto !important;
+            background-size: cover;
         }
 
         .ideaElement3 {
             width: 325px;
-            height: 548px;
+            height: auto !important;
+            background-size: cover;
         }
 
         .ideaElement6 {
@@ -3692,7 +3725,17 @@
             margin: 0 5px;
             margin-left: 3%;
         }
-
+        .ideaElement1{
+            height: 573px !important;
+        }
+        .ideaElement2 {
+            height: 500px !important;
+            width: 569px;
+        }
+        .ideaElement3{
+            width: 446px;
+    height: 502px!important;
+        }
         .deletedElement__price {
             margin-left: 11%;
         }
@@ -3855,6 +3898,7 @@
         }
 
         .ideaForHome__photos {
+            align-items: flex-start;
             justify-content: center;
         }
 
@@ -3910,8 +3954,15 @@
         .aboutFactoryDiv1 img {
             width: 566px;
         }
-    }
 
+       
+    }
+    .location1{
+        padding-top: 80px !important;
+    }
+    .location1 h2{
+        padding-bottom: 40px;
+    }
     .header__block1_mobile {
         display: none;
     }
@@ -4689,7 +4740,9 @@
         .productActive {
             display: none;
         }
-
+        .ideaElement1 {
+            height: 699px!important;
+        }
         .furnitureToOrder2 h2 {
             gap: 0 !important;
         }
@@ -6335,7 +6388,7 @@
         }
 
         .ideaForHome__element {
-            height: 300px;
+            height: 300px !important;
             background-size: cover;
         }
 
