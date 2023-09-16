@@ -1035,7 +1035,7 @@
 
         </div>
     </div>
-    <div class="furnitureToOrder__mother">
+    <div style="position: fixed;" class="furnitureToOrder__mother">
 
         <div class="furnitureToOrder">
             <div class="furnitureToOrder__wrapper ">
@@ -1543,7 +1543,42 @@
 
         </div>
     </div>
+    <div class="furnitureToOrder__mother furnitureToOrder__mother2">
 
+        <div class="furnitureToOrder furnitureToOrder2">
+            <div class="furnitureToOrder__wrapper ">
+
+                <h2>Расчет стоимости доставки <img id="furnitureOrder__close2" src="./styles/photo/close.png" alt="">
+                </h2>
+                <form action="">
+                    <label for="input__name">Имя</label>
+                    <input id="input__name" class="inputs" type="text" placeholder="Ваше имя">
+                    <label for="input__phone">Телефон</label>
+                    <input id="input__phone" type="text" class="inputs" placeholder="+7 999 999-99-99">
+                    <label for="input__email">Email</label>
+                    <input id="input__email" type="text" class="inputs" placeholder="Email">
+
+                    <label for="textarea">Комментарий</label>
+
+                    <textarea name="textarea" rows="10" placeholder="Ваш вопрос"></textarea>
+
+
+
+                    <label id="main">
+                        <input type="checkbox">
+                        <span class="geekmark"></span>
+                        <p>
+                            Отправляя персональные данные из данной формы, я даю согласие на обработку своих
+                            персональных данных
+
+                        </p>
+                    </label>
+                    <button>Отправить заявку </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
     <div class="takeBackCall__mother">
         <div id="takeBackCall">
 
@@ -2626,7 +2661,7 @@
                     <h2>Индивидуальный дизайн мебели</h2>
                     <p>Не нашли нужный вариант, хотите в другом цвете или размере — можем изготовить мебель по вашему
                         желанию</p>
-                    <button>Оставить заявку</button>
+                    <button class="furToOrderBut2">Оставить заявку</button>
                 </div>
                 <div class="individualFurniture__lastDiv">
                     <svg xmlns="http://www.w3.org/2000/svg" width="155" height="161" viewBox="0 0 155 161" fill="none">
@@ -3303,7 +3338,13 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
-
+    <script>
+        const furToOrderBut2=document.querySelector('.furToOrderBut2')
+        const furnitureToOrder__mother3=document.querySelector('.furnitureToOrder__mother')
+        furToOrderBut2.onclick=function(){
+            furnitureToOrder__mother3.classList.add('displayFlex')
+        }
+   </script>
 </body>
 
 </html>

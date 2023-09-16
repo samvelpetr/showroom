@@ -228,16 +228,18 @@
         cursor: pointer;
         transform: translate(100px, -25px);
     }
-
+    .modernCollection__swiper1 {
+        z-index: 0;
+    }
     .slide__call {
         position: absolute;
         right: 100px;
-        z-index: 1000;
+        z-index: 100000000000000000000000000000000000000;
         bottom: 100px;
         cursor: pointer;
 
     }
-
+    
     .mainslider .swiper-wrapper {
         padding-bottom: 50px;
     }
@@ -4018,7 +4020,9 @@
     .forPartnersBut {
         cursor: pointer;
     }
-
+    .favoritePopUp__mother{
+        border: 1px solid #1E1E1E;
+    }
     .forPartners__mother {
         position: absolute;
         overflow: hidden;

@@ -405,12 +405,13 @@ try {
     individualPrice[1].onclick = function (params) {
         furnitureToOrder__mother2.classList.add('displayFlex')
     }
-    furnitureOrder__close2.onclick = function (params) {
-        furnitureToOrder__mother2.classList.remove('displayFlex')
-
-    }
+    
 
 } catch (error) {
+
+}
+furnitureOrder__close2.onclick = function (params) {
+    furnitureToOrder__mother2.classList.remove('displayFlex')
 
 }
 // hoverIcon.forEach((e,i)=>{
@@ -702,4 +703,10 @@ try {
 
 } catch (error) {
 
+}
+const DoYouHaveQuestionBut=document.querySelector('.DoYouHaveQuestion button')
+ furnitureToOrder__mother2
+DoYouHaveQuestionBut.onclick=function () {
+    deliveryPopUp__mother.classList.remove('displayFlex')
+    furnitureToOrder__mother2.classList.add('displayFlex')
 }
