@@ -194,7 +194,7 @@ const paymentPopUp__mother = document.querySelector('.paymentPopUp__mother')
 const closePopUp3 = document.querySelector('.closePopUp3')
 const closePopUp4 = document.querySelector('.closePopUp4')
 const paymentPopUpBut = document.querySelector('.paymentPopUpBut')
-const delivery__conditions=document.querySelectorAll('.delivery__conditions')
+const delivery__conditions = document.querySelectorAll('.delivery__conditions')
 
 try {
 
@@ -341,14 +341,14 @@ const closePopUp5 = document.querySelector('.closePopUp5')
 try {
     delivery__conditions[0].onclick = function () {
         deliveryPopUp__mother.classList.add('displayFlex')
-    
+
     }
     delivery__conditions[1].onclick = function () {
         paymentPopUp__mother.classList.add('displayFlex')
-    
+
     }
 } catch (error) {
-    
+
 }
 
 
@@ -364,11 +364,11 @@ deliveryPopUpBut.onclick = function () {
 closePopUp5.onclick = function () {
     deliveryPopUp__mother.classList.remove('displayFlex')
 }
-const deliveryNames=document.querySelectorAll('.deliveryNames li')
-const deliveryOptions=[document.querySelector('.deliveryOption1'),document.querySelector('.deliveryOption2'),document.querySelector('.deliveryOption3')]
-deliveryNames.forEach((e,i)=>{
-    e.addEventListener('click',function(){
-        deliveryNames.forEach((el,index)=>{
+const deliveryNames = document.querySelectorAll('.deliveryNames li')
+const deliveryOptions = [document.querySelector('.deliveryOption1'), document.querySelector('.deliveryOption2'), document.querySelector('.deliveryOption3')]
+deliveryNames.forEach((e, i) => {
+    e.addEventListener('click', function () {
+        deliveryNames.forEach((el, index) => {
             el.classList.remove('fur-active')
             deliveryOptions[index].classList.remove('displayBlock')
         })
@@ -405,7 +405,7 @@ try {
     individualPrice[1].onclick = function (params) {
         furnitureToOrder__mother2.classList.add('displayFlex')
     }
-    
+
 
 } catch (error) {
 
@@ -704,9 +704,35 @@ try {
 } catch (error) {
 
 }
-const DoYouHaveQuestionBut=document.querySelector('.DoYouHaveQuestion button')
- furnitureToOrder__mother2
-DoYouHaveQuestionBut.onclick=function () {
+const DoYouHaveQuestionBut = document.querySelector('.DoYouHaveQuestion button')
+furnitureToOrder__mother2
+DoYouHaveQuestionBut.onclick = function () {
     deliveryPopUp__mother.classList.remove('displayFlex')
     furnitureToOrder__mother2.classList.add('displayFlex')
 }
+
+const productCount_minus = document.querySelectorAll('.productCount_minus');
+const productCount_plus = document.querySelectorAll('.productCount_plus');
+const count = document.querySelectorAll('#count');
+
+count.forEach((e, index) => {
+    productCount_minus[index].onclick = function () {
+        if(e.innerHTML !=1){
+            e.innerHTML = +(e.innerHTML) - 1
+        }
+
+    }
+    productCount_plus[index].onclick = function () {
+        e.innerHTML = +(e.innerHTML) + 1
+
+    }
+})
+
+const product__delete=document.querySelectorAll('.product__delete')
+
+const tableElement=document.querySelectorAll('.tableElement')
+tableElement.forEach((e,i)=>{
+    product__delete[i].onclick=function (params) {
+        e.classList.add('displayNone')
+    }
+})

@@ -975,6 +975,46 @@
         top: -41px;
     }
 
+    .displayNone{
+        display: none !important;
+    }
+    .description2 > div{
+        width: 100%;
+        display: flex;
+        background-image: url(./photo/dottedLine.png);
+        background-repeat: repeat-x !important;
+         background-position: bottom;
+        /* flex-wrap: nowrap; */
+        /* border-bottom: 2px dotted #818181 ; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .description2 > div span,.description2 > div p{
+        display: inline-block;
+        background: white;
+    }
+    /* .dottedDiv{
+        align-self: flex-end;
+        width: auto;
+        height: 10px;
+        border-bottom: 3px dotted #818181;
+    } */
+    .product__art{
+        display: flex; align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-top: 12px;
+    }
+    .product__art div img{
+        width: 24px !important;
+    }
+    .product__art div{
+        display: flex;
+        align-items: center;
+    }
+    .colectionProduct .product__art p{
+        margin-top: 0 !important;
+    }
     .delivery_bus {
         float: right;
         margin-right: 20px;
@@ -2808,7 +2848,7 @@
         margin-bottom: 50px;
     }
 
-    .product__wrapper h4 {
+    .product__wrapper h1 {
         font-size: 24px;
         font-weight: 600;
         padding-top: 50px;
@@ -5825,7 +5865,7 @@
             position: absolute !important;
 
         }
-        .product__wrapper h4 {
+        .product__wrapper h1 {
             font-size: 16px;
             padding-top: 20px;
         }
@@ -7270,6 +7310,22 @@
         .colectionProduct .product__photo{
             height: auto;
             min-height: 90px !important;
+        }
+        .product__art div img{
+            width: 12px !important;
+        }.salesHit__swiper .swiper-slide{
+            width: 187px !important;
+        }
+        .product__addedToCart{
+            height: 45px;
+            border: 3px solid #8CAFC5;
+        }
+        .product__addedInCart{
+            align-self: flex-start;
+        }
+        .ourProduction__wrapper h2{
+            padding-bottom: 10px;
+            padding-top: 32px;
         }
     }
 

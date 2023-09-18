@@ -1604,34 +1604,7 @@
             <button class="close__zayavka2PopUp">Хорошо</button>
         </div>
     </div>
-    <div>
-        <button class="zayavka1">Всё прошло успешно</button>
-        <button class="zayavka2">Заявка успешно</button>
-    </div>
-    <script>
-        const zayavka1=document.querySelector('.zayavka1')
-        const zayavka2=document.querySelector('.zayavka2')
-        const zayavka2PopUp=document.querySelector('.zayavka2PopUp')
-        const zayavka1PopUp=document.querySelector('.zayavka1PopUp')
-        const close__zayavka2PopUp=document.querySelector('.close__zayavka2PopUp')
-        const close__zayavka1PopUp=document.querySelector('.close__zayavka1PopUp')
-        
-
-        zayavka1.onclick=function(){
-            zayavka1PopUp.classList.add('displayFlex')
-        }
-        zayavka2.onclick=function(){
-            zayavka2PopUp.classList.add('displayFlex')
-        }
-        close__zayavka2PopUp.onclick=function(){
-            zayavka2PopUp.classList.remove('displayFlex')
-
-        }
-        close__zayavka1PopUp.onclick=function(){
-            zayavka1PopUp.classList.remove('displayFlex')
-
-        }
-    </script>
+   
 
 
     <div class="delivery__mother">
@@ -2535,11 +2508,46 @@
             </div>
 
         </div>
+        <div>
+            <button class="zayavka1">Всё прошло успешно</button>
+            <button class="zayavka2">Заявка успешно</button>
+        </div>
+       
         <div class="underfooter">
             Любое копирование информации не для нашего промо запрещены без письменного разрешения
         </div>
     </footer>
+    <script>
+        const zayavka1=document.querySelector('.zayavka1')
+        const zayavka2=document.querySelector('.zayavka2')
+        const zayavka2PopUp=document.querySelector('.zayavka2PopUp')
+        const zayavka1PopUp=document.querySelector('.zayavka1PopUp')
+        const close__zayavka2PopUp=document.querySelector('.close__zayavka2PopUp')
+        const close__zayavka1PopUp=document.querySelector('.close__zayavka1PopUp')
+        
 
+        zayavka1.onclick=function(){
+            zayavka1PopUp.classList.add('displayFlex')
+        }
+        zayavka2.onclick=function(){
+            zayavka2PopUp.classList.add('displayFlex')
+        }
+        close__zayavka2PopUp.onclick=function(){
+            zayavka2PopUp.classList.remove('displayFlex')
+
+        }
+        close__zayavka1PopUp.onclick=function(){
+            zayavka1PopUp.classList.remove('displayFlex')
+
+        }
+        zayavka1PopUp.onclick=function(){
+            zayavka1PopUp.classList.remove('displayFlex')
+        }
+        zayavka2PopUp.onclick=function(){
+            zayavka2PopUp.classList.remove('displayFlex')
+
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
