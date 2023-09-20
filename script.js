@@ -400,10 +400,12 @@ const furnitureOrder__close2 = document.querySelector('#furnitureOrder__close2')
 const individualPrice = document.querySelectorAll('.individualPrice')
 try {
     individualPrice[0].onclick = function (params) {
-        furnitureToOrder__mother2.classList.add('displayFlex')
+        furnitureToOrder__mother.classList.add('displayFlex')
+        document.body.classList.add('overflow__hiden')
     }
     individualPrice[1].onclick = function (params) {
-        furnitureToOrder__mother2.classList.add('displayFlex')
+        furnitureToOrder__mother.classList.add('displayFlex')
+        // document.body.classList.add('overflow__hiden')
     }
 
 

@@ -1973,7 +1973,7 @@
     }
 
     .colectionPhotosElement6 {
-        background: url(./photo/allcolection6.png);
+        background: url(./photo/allcolection1.png);
     }
 
     .colectionPhotosElement7 {
@@ -1993,7 +1993,7 @@
         text-align: center;
     }
 
-    #salesSect>h2 {
+    .salesSect>h2 {
         padding-top: 40px;
         text-align: center;
     }
@@ -2003,7 +2003,7 @@
 
     }
 
-    #salesSect .container h2 {
+    .salesSect .container h2 {
         padding: 40px 0;
     }
 
@@ -2280,7 +2280,7 @@
         margin-top: 27px;
     }
 
-    #salesSect>h2 {
+    .salesSect>h2 {
         padding-top: 40px;
     }
 
@@ -2441,6 +2441,8 @@
 
     .product__description span {
         color: #575757;
+        display: inline-block;
+        background: white;
     }
 
     .tableElement .product__price {
@@ -2931,6 +2933,7 @@
 
     .seeAllCharacteristics {
         padding-top: 10px;
+        display: block;
         font-size: 14px;
         text-decoration: underline;
         color: #575757;
@@ -3341,14 +3344,20 @@
         margin-top: 30px;
         font-weight: 600;
     }
-    #salesSect>h2{
+    .salesSect>h2{
         padding-top: 80px;
     }
-    #salesSect .container h2{
+    .salesSect .container h2{
         padding-top: 80px;
     }
     #showroomSection{
         margin-bottom: 80px;
+    }
+    .reviewsH2{
+        padding-top: 62px;
+    }
+    .reviewsH21{
+        padding-bottom: 50px;
     }
     @media screen and (max-width:1730px) {
         .container {
@@ -4743,7 +4752,21 @@
         font-size: 14px;
         margin-bottom: 32px;
     }
-
+    .product__description{
+        width: 100%;
+        display: flex;
+        background-image: url(./photo/dottedLine.png);
+        background-repeat: repeat-x !important;
+        background-position: bottom;
+        /* flex-wrap: nowrap; */
+        /* border-bottom: 2px dotted #818181; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .product__description p{
+        display: inline-block;
+        background: white;
+    }
     .writeReview__wrapper button{
         width: 426px;
         border: none;
@@ -5869,10 +5892,12 @@
             font-size: 16px;
             padding-top: 20px;
         }
-
+        .product__description1{
+            width: 100%;
+        }
         .hoverIcon {
             top: 79px;
-            left: 58px;
+            left: 100px;
         }
 
         .payment__block h4 svg,
@@ -6049,8 +6074,9 @@
         }
 
         .hoverIcon1 {
-            top: 162px;
-            left: 157px;
+            top: 207px;
+            left: 192px;
+        
         }
 
         .modernCollection__pagination svg {
@@ -6076,8 +6102,7 @@
 
         .hoverIcon2 {
             top: 73px;
-            left: 286px;
-        }
+            left: 356px;        }
 
         /* .catalog__360{
             display: block;
@@ -6840,9 +6865,12 @@
 
         .colectionNames ul {
             gap: 16px;
-            width: 56%;
+            column-gap: 8px;
+            width: 100%;
         }
-
+        .colectionNames li{
+            width: 160px;
+        }
         .activeColection__main2 {
             flex-direction: column;
         }
@@ -7309,7 +7337,7 @@
         }
         .colectionProduct .product__photo{
             height: auto;
-            min-height: 90px !important;
+            min-height: 102px !important;
         }
         .product__art div img{
             width: 12px !important;
@@ -7327,18 +7355,39 @@
             padding-bottom: 10px;
             padding-top: 32px;
         }
+        .colectionNames__sales ul {
+            height: 210px;
+        }
+        .salesSect>h2{
+            padding-top: 36px;
+        }
+        .salesSect .container h2{
+            padding: 16px 0;
+        }
     }
 
     @media screen and (max-width:550px) {
         .mainslider__slide {
             height: auto !important;
         }
+        .hoverIcon2 {
+            top: 73px;
+            left: 287px;
+        }
+        .hoverIcon1 {
+            top: 164px;
+            left: 170px;
+        }
     }
 
     @media screen and (max-width:460px) {
+        .hoverIcon {
+            top: 79px;
+            left: 61px;
+        }
         .hoverIcon1 {
-            top: 112px;
-            left: 107px;
+            top: 125px;
+            left: 123px;
         }
 
         .hoverIcon2 {
@@ -7350,3 +7399,4 @@
             top: -35px;
         }
     }
+   
