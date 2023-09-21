@@ -913,6 +913,7 @@
 
     .product__price {
         padding-top: 29px;
+
         font-size: 24px;
         display: flex;
         align-self: flex-start;
@@ -925,7 +926,15 @@
         align-self: flex-end;
         color: #575757;
     }
-
+    .product__price p{
+        font-weight: 600;
+    }
+    .price1 span{
+        font-weight: 400;
+    }
+    .product__price p span{
+        font-weight: 400;
+    }
     .product__addToCart {
         width: 368px;
         padding: 20px 0;
@@ -971,7 +980,7 @@
 
     .freeDelivery__photo {
         position: absolute;
-        left: 8%;
+        left: 0;
         top: -41px;
     }
 
@@ -1440,7 +1449,7 @@
         position: absolute;
         width: 100%;
         height: 444px;
-        top: 220px;
+        top: 214px;
         left: 0;
         display: none;
         border-bottom: 1px solid #575757;
@@ -2093,7 +2102,7 @@
     }
 
     .colectionProduct .product__addToCart {
-        width: 100%;
+        width: 96%;
     }
 
     .product__addToCart:hover span {
@@ -2207,7 +2216,7 @@
     }
 
     #separateProductColection h2 {
-        padding: 40px 0;
+        padding: 80px 0 40px;
     }
 
     .colectionProductSeparate .product__price {
@@ -2358,7 +2367,7 @@
     }
 
     .colectionProductSeparate .product__addToCart {
-        width: 100%;
+        width: 96%;
     }
 
     .colectionPhotosSlider {
@@ -3149,7 +3158,7 @@
     }
 
     .collectionSugar__wrapper h2 {
-        padding: 40px 0;
+        padding: 55px 0 40px;
         text-align: left !important;
     }
 
@@ -3163,7 +3172,7 @@
     }
 
     .addYourInterier__wrapper h2 {
-        padding-top: 40px;
+        padding-top: 80px;
     }
 
     .swiper-slide .product__photo1 {
@@ -3201,7 +3210,7 @@
     }
 
     .toFactory__wrapper {
-        margin-top: 300px;
+        margin-top: 215px;
         width: 100%;
         border: 1px solid #818181;
         display: flex;
@@ -3358,6 +3367,33 @@
     }
     .reviewsH21{
         padding-bottom: 50px;
+    }
+
+    .colectionProduct .product__art {
+        padding-right: 16px;
+    }
+    .colectionProduct .product__price{
+       padding-left: 16px;
+    }
+    .colectionProduct .product__name{
+        padding-left: 16px;
+    }
+
+    .colectionProduct  .product__available{
+        padding-left: 16px;
+    }
+    .colectionProduct .product__addToCart{
+        margin: 28px 16px;
+    }
+
+    .colectionProductSeparate .product__name{
+        padding-left: 16px;
+    }
+    .colectionProductSeparate .product__price{
+        padding-left: 16px;
+    }
+    .colectionProductSeparate .product__addToCart{
+        margin: 27px 16px;
     }
     @media screen and (max-width:1730px) {
         .container {
@@ -6808,7 +6844,7 @@
 
         .colectionsProduct_main {
             gap: 16px;
-            justify-content: flex-start;
+            justify-content: space-between;
         }
 
         .colectionProduct .product__photo {
@@ -7363,6 +7399,45 @@
         }
         .salesSect .container h2{
             padding: 16px 0;
+        }
+        .addYourInterier__wrapper h2{
+            padding-top: 32px;
+        }
+        .collectionSugar__wrapper h2{
+            padding-top: 32px;
+            padding-bottom: 18px;
+        }
+        #separateProductColection h2{
+            padding-top: 32px;
+            padding-bottom: 18px;
+        }
+
+        .colectionProduct .product__art {
+            padding-right: 0;
+        }
+        .colectionProduct .product__price{
+           padding-left: 0;
+        }
+        .colectionProduct .product__name{
+            padding-left: 0;
+        }
+    
+        .colectionProduct  .product__available{
+            padding-left: 0;
+        }
+        .colectionProduct .product__addToCart{
+            margin: 12px 0;
+        }
+
+        .colectionProductSeparate .product__name{
+            padding-left: 0;
+        }
+        .colectionProductSeparate .product__price{
+            padding-left: 0;
+        }
+        .colectionProductSeparate .product__addToCart{
+            margin: 27px 0;
+            width: 100%;
         }
     }
 
